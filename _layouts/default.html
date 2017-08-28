@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+
+{% include head.html %}
+
+<body>
+  <div class="container">
+
+    {% include header.html %}
+
+    <section class="content">
+
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+  </div>
+
+<script src="{{ site.baseurl | urljoin: 'assets/js/main.js' }}"></script>
+
+</body>
+
+</html>

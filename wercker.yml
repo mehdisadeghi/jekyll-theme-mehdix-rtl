@@ -1,0 +1,34 @@
+box: ruby
+build:
+  steps:
+    # Install dependencies
+    - script:
+        name: bundle - nokogiri use sys lib
+        code: bundle config build.nokogiri --use-system-libraries
+
+    - bundle-install
+
+    # Execute jeykyll doctor command to validate the
+    # site against a list of known issues.
+    - script:
+        name: jekyll doctor
+        code: bundle exec jekyll doctor
+
+    - script:
+        name: generate site
+        code: bundle exec jekyll build --trace --destination ./_site
+
+    - create-file:
+        name: generate robots.txt
+        filename: ./_site/robots.txt
+        content: |-
+          User-agent: *
+          Allow: /
+          Sitemap: http://mehdix.ir/sitemap.xml
+
+deploy:
+  steps:
+    - lukevivier/gh-pages:
+        token: $GITHUB_TOKEN
+        basedir: _site
+        domain: mehdix.ir

@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+/* Droid Arabic Naskh */
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+// Our variables
+$base-font-family: 'Droid Arabic Naskh', Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: normal;
+$spacing-unit:     30px;
+
+/* Palette from 
+https://coolors.co/app/000000-14213d-fca311-e5e5e5-ffffff 
+$brand-color:      #fca311;
+$anti-color:       #e5e5e5;
+$text-color:       #000000;
+$background-color: #ffffff;
+$header-color:     #14213d;
+*/
+
+/* Palett source:
+https://coolors.co/app/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+$brand-color:      #d90429;
+$anti-color:       #8d99ae;
+$text-color:       #2b2d42;
+$background-color: #ffffff; /* original one was edf2f4 */
+$header-color:     #ef233c;
+
+$grey-color:       gray;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Store asset directory to be used in imports
+$assets-dir:	   '{{ site.baseurl | urljoin: "assets" }}';
+
+
+// Use media queries like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+	"print",
+        "ux-theme"
+;
+

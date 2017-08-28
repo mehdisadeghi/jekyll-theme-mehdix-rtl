@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="tag-page">
+
+	<h1 class="page-heading">❖ &nbsp; {{ page.tag }}</h1>
+
+	<ul id="post-list">
+		{% for post in page.posts %}
+		<li>
+			<span class="post-meta list-meta-col">
+				<span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
+				<span><a href="{{ site.baseurl | urljoin: post.url}}">{{ post.title }}</a></span>
+			</li>
+			{% endfor %}
+		</ul>
+
+	<hr >
+
+	<div id="tag-cloud">
+		{{ site | tag_cloud }}
+	</div>
+
+</div>

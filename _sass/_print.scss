@@ -1,0 +1,9 @@
+@media print { 
+	/* your print styles go here */
+	.site-header, .site-footer { display: none; } 
+	#disqus_thread { display: none; }
+
+	body { background-image: none;  } 
+	h1 { font-size: 18pt; } 
+	h2 { font-size: 16pt; color: #000; }
+}
