@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl | urljoin: '/'}}">{{ site.title }}</a>
+    <a class="site-title" href="{{ '' | absolute_url}}">{{ site.title }}</a>
     <small> {{ site.motto }} </small>
 
     {% if site.pages.size > 3 %}
