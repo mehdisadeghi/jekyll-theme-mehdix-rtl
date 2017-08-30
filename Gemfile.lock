@@ -4,11 +4,11 @@ PATH
     jekyll-theme-mehdix-rtl (0.1.0)
       coderay (~> 1.1)
       jekyll (~> 3.3)
+      jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
       jekyll-jalali (~> 0.1)
       jekyll-paginate (~> 1.1)
       jekyll-sitemap (~> 1.1)
-      jekyll-tagging (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -39,6 +39,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-default-layout (0.1.4)
+      jekyll (~> 3.0)
     jekyll-hinduarabic (0.1.0)
     jekyll-jalali (0.1.0)
       jalalidate (~> 0.3)
@@ -97,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.12)
+  jekyll-default-layout
   jekyll-hinduarabic
   jekyll-jalali
   jekyll-markright
