@@ -63,7 +63,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-jalali
   - jekyll-hinduarabic
-#  - jekyll-markright
+  - jekyll-markright
   - coderay
 
 collections:

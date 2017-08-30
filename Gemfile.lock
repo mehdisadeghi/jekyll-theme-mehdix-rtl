@@ -7,6 +7,7 @@ PATH
       jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
       jekyll-jalali (~> 0.1)
+      jekyll-markright (~> 0.1)
       jekyll-paginate (~> 1.1)
       jekyll-sitemap (~> 1.1)
 
