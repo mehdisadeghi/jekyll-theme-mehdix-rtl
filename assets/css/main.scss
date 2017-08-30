@@ -37,7 +37,7 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 // Store asset directory to be used in imports
-$assets-dir:	   '{{ site.baseurl | urljoin: "assets" }}';
+$assets-dir:	   '{{ "assets" | absolute_url }}';
 
 
 // Use media queries like this:

@@ -23,11 +23,11 @@ layout: default
   <div style="border-top:1px dotted;">
     <p>
       {% if page.next %}
-      <a href="{{ site.baseurl | urljoin: page.next.url }}" style="float: left"> {{ page.next.title }} >> </a>
+      <a href="{{ page.next.url | absolute_url }}" style="float: left"> {{ page.next.title }} >> </a>
       {% endif %}
 
       {% if page.previous %}
-      <a href="{{ site.baseurl | urljoin: page.previous.url }}" style="margin-right:0px;">&#60&#60	 {{ page.previous.title }}</a>
+      <a href="{{ page.previous.url | absolute_url }}" style="margin-right:0px;">&#60&#60	 {{ page.previous.title }}</a>
       {% endif %}
     </p>
   </div>

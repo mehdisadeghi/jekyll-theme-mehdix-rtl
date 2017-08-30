@@ -10,9 +10,9 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title}} {% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ site.baseurl | urljoin: 'assets/css/main.css' }}">
-    <link rel="canonical" href="{{ site.url | urljoin: site.baseurl, page.url }}">
-    <link rel="icon" href="{{ site.baseurl | urljoin: site.favicon}}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
+    <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}">
+    <link rel="icon" href="{{ site.favicon | absolute_url}}">
 
     {% if page.style%}
      <style type="text/css">

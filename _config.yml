@@ -61,7 +61,9 @@ defaults:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jalalidate
+  - jekyll-jalali
+  - jekyll-hinduarabic
+#  - jekyll-markright
   - coderay
 
 collections:

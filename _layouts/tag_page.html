@@ -11,7 +11,7 @@ layout: default
 		<li>
 			<span class="post-meta list-meta-col">
 				<span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-				<span><a href="{{ site.baseurl | urljoin: post.url}}">{{ post.title }}</a></span>
+				<span><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
 			</li>
 			{% endfor %}
 		</ul>

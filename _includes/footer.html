@@ -2,7 +2,7 @@
 
   <div class="wrapper">
     <div class="footer-col">
-    <img id="gravatar" class="circle" src="{{ site.baseurl | urljoin: 'assets/img/me.png' }}" alt="">
+    <img id="gravatar" class="circle" src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
     </div>
     <h2 class="footer-heading">معرفی</h2>
 
@@ -49,16 +49,16 @@
       </li>
       <li>
         <a href="https://feedburner.google.com/fb/a/mailverify?uri=mehdixir&amp;loc=en_US"><span class="icon icon--feed">
-          <img src="{{ site.baseurl | urljoin: 'assets/img/feed_gray_50.png' }}" alt="" />
+          <img src="{{ 'assets/img/feed_gray_50.png' | absolute_url}}" alt="" />
         </span><span class="username">خبرنامه</span></a>
       </li>
       <li>
         <a href="http://feeds.feedburner.com/mehdixir"><span class="icon icon--feed">
-          <img src="{{ site.baseurl | urljoin: 'assets/img/feed_gray_50.png' }}" alt=""/>
+          <img src="{{ 'assets/img/feed_gray_50.png' | absolute_url }}" alt=""/>
         </span><span class="username">خوراک</span></a>
       </li>
       <li>
-        <span class="icon"><a href="http://validator.w3.org/feed/check.cgi?url=http%3A//mehdix.ir/feed.xml"><img src={{ site.baseurl | urljoin: "assets/img/valid-atom.png" }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
+        <span class="icon"><a href="http://validator.w3.org/feed/check.cgi?url=http%3A//mehdix.ir/feed.xml"><img src={{ "assets/img/valid-atom.png" | absolute_url }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
         <span class="icon"><a href="https://app.wercker.com/project/bykey/7cdfaf1d4ea865468f4965954ed95247"><img src="https://app.wercker.com/status/7cdfaf1d4ea865468f4965954ed95247/s" alt="Build Status" title="wercker status" /></a>
         </span>
       </li>

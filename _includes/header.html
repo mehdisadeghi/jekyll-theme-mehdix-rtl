@@ -19,7 +19,7 @@
         <div class="trigger">
           {% for page in site.pages %}
             {% if page.title and page.publish %}
-            <a class="page-link" href="{{ site.baseurl | urljoin: page.url }}">{{ page.title }}</a>
+            <a class="page-link" href="{{ page.url | absolute_url }}">{{ page.title }}</a>
             {% endif %}
           {% endfor %}
         </div>
