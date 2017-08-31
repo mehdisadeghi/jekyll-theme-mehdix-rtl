@@ -1,17 +1,6 @@
 ---
-layout: default
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">❖ &nbsp; همه‌ی نوشته‌ها</h1>
-
-  <ul id="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta list-meta-col"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-        <span><a href="{{ post.url  | absolute_url }}">{{ post.title }}</a></span>
-      </li>
-    {% endfor %}
-  </ul>
-</div>

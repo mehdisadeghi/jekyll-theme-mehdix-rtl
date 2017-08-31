@@ -12,59 +12,30 @@ description: > # this means to ignore newlines until "baseurl:"
   سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام.
 
 long_description: >
-  بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم. اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است، بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
+  بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم.
+  اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است،
+  بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
 
 twitter_username: mehdisadeghi
 github_username:  mehdisadeghi
 fullname: "مهدی صادقی"
 favicon: "assets/img/favicon.png"
 
-
-#outputting
 permalink: :title.html
 
-# Build settings
-markdown: Markright
-kramdown:
-    coderay_line_numbers: nil
-encoding: utf-8
 timezone: Europe/Berlin
 
-paginate: 5
+paginate: 3
 paginate_path: "/page:num/"
 
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: post
-      author: "مهدی صادقی"
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "drafts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: post
-      author: "مهدی صادقی"
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
-
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-jalali
+  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-hinduarabic
-  - jekyll-markright
-  - coderay
 
 collections:
   projects:
