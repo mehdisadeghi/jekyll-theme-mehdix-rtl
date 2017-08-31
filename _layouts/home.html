@@ -4,14 +4,19 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">❖ &nbsp; همه‌ی نوشته‌ها</h1>
+  <h1 class="page-heading"></h1>
 
-  <ul id="post-list">
+  <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta list-meta-col"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-        <span><a href="{{ post.url  | absolute_url }}">{{ post.title }}</a></span>
+        <span class="post-meta"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+        </h2>
+        {{ post.content | strip_html | truncatewords: 35 }}
       </li>
     {% endfor %}
   </ul>
+
 </div>
