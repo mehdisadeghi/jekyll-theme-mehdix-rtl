@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+
 /* Droid Arabic Naskh */
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 
@@ -55,9 +56,9 @@ $assets-dir:	   '{{ "assets" | absolute_url }}';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
+    "base",
+    "layout",
 	"print",
-        "ux-theme"
+    "ux-theme",
+    "default.css"
 ;
-
