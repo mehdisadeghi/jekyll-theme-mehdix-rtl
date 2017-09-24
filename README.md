@@ -47,7 +47,7 @@ The following layouts are available for your homepage:
 - minimal: only post titles
 
 ### Comments
-In order to enalbe disqus comments add `disqus: true` to your `_config.yml` file.
+In order to enalbe disqus comments add `disqus: true` to your `_config.yml` file. Moreover, you have to set `disqus_shortname` to your disqus username.
 
 ### Forcing RTL code blocks
 If you put code blocks and they appear incorrectly, you can use _Markright gem. First add it to your Gemfile:

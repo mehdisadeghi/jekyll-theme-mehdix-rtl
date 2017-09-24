@@ -1,4 +1,6 @@
-var disqus_shortname = 'mehdix';
+---
+---
+var disqus_shortname = '{{site.disqus_shortname}}';
 
 var load_disqus = function () {
   var nodes = document.getElementsByTagName('span');
@@ -55,19 +57,3 @@ if ( !ds_loaded && ( window.scrollY || window.pageYOffset ) + window.innerHeight
     window.onscroll = function() { loadDisqus(); }
   }
 
-// ***********************************
-$(document).ready(function() {
-  $('.show-comments').on('click', function(){
-    var disqus_shortname = 'mehdix';
-
-          // ajax request to load the disqus javascript
-          $.ajax({
-            type: "GET",
-            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-            dataType: "script",
-            cache: true
-          });
-          // hide the button once comments load
-          $(this).fadeOut();
-        });
-});

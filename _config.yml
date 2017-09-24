@@ -42,4 +42,5 @@ collections:
     output: true
 
 disqus: true
+disqus_shortname: mehdix
 google_analytics_id: UA-57282325-1
