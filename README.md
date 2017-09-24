@@ -62,6 +62,8 @@ And change your __config.yml_ respectively:
 markdown: Markright
 ```
 
+### Analytics
+In order to send pageviews to Google Analytics set your ID in the `_config.yml`: `google_analytics_id: YOUR_ID`
 
 
 ## License

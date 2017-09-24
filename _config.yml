@@ -42,3 +42,4 @@ collections:
     output: true
 
 disqus: true
+google_analytics_id: UA-57282325-1
