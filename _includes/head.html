@@ -6,32 +6,25 @@
   <meta name="copyright" content="{{ site.copyright }}" />
   <meta name="robot" content="{{ site.robot }}" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ site.description | strip_newlines}}">
 
-  <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title}}
-    {% else %}
-      {{ site.title}}
-    {% endif %}
-  </title>
+  {%- if page.title -%}
+  <title>{{ page.title }} - {{ site.title}}</title>
+  {%- else -%}
+  <title>{{ site.title}}</title>
+  {%- endif -%}
 
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
   <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}">
   <link rel="icon" href="{{ site.favicon | absolute_url}}">
 
-  {% if page.style%}
-   <style type="text/css">
-       {{ page.style }}
-   </style>
-  {% endif %}
-  {% if page.url == "/404.html" %}
+  {%- if page.style -%}
+  <style type="text/css">
+    {{ page.style }}
+  </style>
+  {%- endif -%}
 
-  {% if post.style%}
-   <style type="text/css">
-       {{ post.style }}
-   </style>
-  {% endif %}
-  <meta http-equiv="refresh" content="5; url='{{ site.baseurl | absolute_url}}'">
-  {% endif %} 
+  {%- if page.url == "/404.html" -%}
+  <meta http-equiv="refresh" content="5; url='{{ site.baseurl | absolute_url}}'" />
+  {%- endif %} 
 </head>
