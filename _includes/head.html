@@ -1,31 +1,37 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta name="keywords" content="{{ site.keywords }}" />
-    <meta name="author" content="{{ site.author}}" />
-    <meta name="copyright" content="{{ site.copyright }}" />
-    <meta name="robot" content="{{ site.robot }}" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <meta name="author" content="{{ site.author}}" />
+  <meta name="copyright" content="{{ site.copyright }}" />
+  <meta name="robot" content="{{ site.robot }}" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ site.description }}">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title}} {% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
-    <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}">
-    <link rel="icon" href="{{ site.favicon | absolute_url}}">
-
-    {% if page.style%}
-     <style type="text/css">
-         {{ page.style }}
-     </style>
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title}}
+    {% else %}
+      {{ site.title}}
     {% endif %}
-    {% if page.url == "/404.html" %}
+  </title>
 
-    {% if post.style%}
-     <style type="text/css">
-         {{ post.style }}
-     </style>
-    {% endif %}
-    <meta http-equiv="refresh" content="5; url='{{ site.baseurl }}/'">
-    {% endif %} 
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
+  <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}">
+  <link rel="icon" href="{{ site.favicon | absolute_url}}">
+
+  {% if page.style%}
+   <style type="text/css">
+       {{ page.style }}
+   </style>
+  {% endif %}
+  {% if page.url == "/404.html" %}
+
+  {% if post.style%}
+   <style type="text/css">
+       {{ post.style }}
+   </style>
+  {% endif %}
+  <meta http-equiv="refresh" content="5; url='{{ site.baseurl | absolute_url}}'">
+  {% endif %} 
 </head>
