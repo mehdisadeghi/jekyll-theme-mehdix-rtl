@@ -41,6 +41,15 @@ You can override theme style by creating matching files with the same structure 
 
 
 ## Further customization
+### Layouts
+The following layouts are available for your homepage:
+- home: post titles along with an excerpt and pagination
+- minimal: only post titles
+
+### Comments
+In order to enalbe disqus comments add `disqus: true` to your `_config.yml` file.
+
+### Forcing RTL code blocks
 If you put code blocks and they appear incorrectly, you can use _Markright gem. First add it to your Gemfile:
 
 ```ruby
