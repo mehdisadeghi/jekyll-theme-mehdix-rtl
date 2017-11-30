@@ -262,7 +262,7 @@ html, body { height: 100%; margin: 0; padding: 0; }
 
 /* My styles */
 .circle {
-    border-radius: 50%;
+    clip-path: circle();
     width: 100px;
 }
 
