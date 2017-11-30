@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html dir="rtl" lang="fa">
-
 {% include head.html %}
 
 <body>
   <div class="container">
-
-    {% include header.html %}
-
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="{{ '' | absolute_url}}">{{ site.title }}</a>
+        <small> {{ site.motto }} </small>
+      </div>
+    </header>
     <section class="content">
       <div class="page-content">
         <div class="wrapper">
@@ -16,13 +17,9 @@
         </div>
       </div>
     </section>
-
     {%- include footer.html -%}
-
   </div>
-
-<script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-
+  <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
 </body>
 
 </html>
