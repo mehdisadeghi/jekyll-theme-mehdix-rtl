@@ -187,8 +187,9 @@ html, body {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width: calc(100% - (#{$spacing-unit} / 2));
     }
+
     #footer_description, #gravatar_container, #footer_build_status,
-        .footer-heading, #license_link, .post-meta {
+        .footer-heading, #license_link {
         display: none;
     }
 
@@ -204,6 +205,10 @@ html, body {
     .social-media-list {
         display: flex;
         margin-top: 1em;
+    }
+
+    #motto {
+        display: none;
     }
 
     .social-media-list li {
@@ -229,11 +234,16 @@ html, body {
 
 .post-list {
     margin-left: 0;
+    padding-right: initial;
     list-style: none;
 
     > li {
         margin-bottom: $spacing-unit;
     }
+}
+
+.post-list h2 {
+    margin-bottom: initial;
 }
 
 .post-meta {
@@ -248,7 +258,7 @@ html, body {
 }
 
 .post-header {
-    //margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
 }
 
 .post-title {
