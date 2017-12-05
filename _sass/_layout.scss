@@ -348,6 +348,7 @@ a:visited {
 
 h1, h2:not(.footer-heading), h3, h4, h5, h6 {
     color: darken($header-color, 20%);
+    margin-bottom: unset;
 }
 
 /* Style for glyphs in quotation marks, courtesy of EnigmaRM http://stackoverflow.com/a/16326442/157216 */
