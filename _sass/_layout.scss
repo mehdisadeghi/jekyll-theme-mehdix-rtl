@@ -186,6 +186,7 @@ html, body {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width: calc(100% - (#{$spacing-unit} / 2));
+        padding-left: unset;
     }
 
     #footer_description, #gravatar_container, #footer_build_status,
@@ -194,17 +195,17 @@ html, body {
     }
 
     #license {
-        text-align: center;
         font-size: 9px;
     }
 
     .site-footer {
-
+      text-align: center;
     }
 
     .social-media-list {
         display: flex;
         margin-top: 1em;
+        padding-right: unset;
     }
 
     #motto {
@@ -584,7 +585,6 @@ pre {
 /* For license text */
 #license {
     font-style: small;
-    float: right;
 }
 
 #forkme {
