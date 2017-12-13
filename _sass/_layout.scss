@@ -136,6 +136,14 @@ html, body {
     margin-left: 0;
 }
 
+.social-media-list .icon {
+    width: 1em;
+}
+
+#mail-icon {
+  filter: invert(100);
+}
+
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
