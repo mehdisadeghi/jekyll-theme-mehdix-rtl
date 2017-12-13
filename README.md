@@ -62,6 +62,14 @@ And change your __config.yml_ respectively:
 markdown: Markright
 ```
 
+### Footer
+If any of the following ids is present in the config a corresponding item will be added to the footer:
+
+- github_username
+- twitter_username
+- feedburner_id
+- email
+
 ### Analytics
 In order to send pageviews to Google Analytics set your ID in the `_config.yml`: `google_analytics_id: YOUR_ID`
 
