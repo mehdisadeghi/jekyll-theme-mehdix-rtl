@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
   {%- if page.tags -%}
     <meta name="keywords" content='{{ page.tags | join: "," }}' />
   {%- elsif page.url contains site.tag_page_dir -%}
@@ -25,8 +25,5 @@
     <style type="text/css">
     {{ page.style }}
     </style>
-  {%- endif -%}
-  {%- if page.url == "/404.html" -%}
-    <meta http-equiv="refresh" content="5; url='{{ site.baseurl | absolute_url}}'" />
   {%- endif -%}
 </head>
