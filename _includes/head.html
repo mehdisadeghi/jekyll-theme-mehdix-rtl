@@ -6,7 +6,7 @@
   {%- elsif page.url contains site.tag_page_dir -%}
     <meta name="robots" content="noindex">
   {%- else -%}
-    <meta name="keywords" content='{{ site.keywords | join: "," }}' />
+    <meta name="keywords" content='{{ site.keywords | split: " " | join: "," }}' />
   {%- endif -%}
   <meta name="author" content="{{ site.author}}" />
   <meta name="copyright" content="{{ site.copyright }}" />
