@@ -52,6 +52,7 @@ html, body {
     &:visited {
         color: $grey-color-dark;
     }
+
     float: right;
 }
 
@@ -120,6 +121,7 @@ html, body {
 
 .site-footer {
     border-top: 1px solid $grey-color-light;
+
     //padding: $spacing-unit 0;
     background-color: floralwhite;
 }
@@ -141,7 +143,7 @@ html, body {
 }
 
 #mail-icon {
-  filter: invert(100);
+    filter: invert(100);
 }
 
 .footer-col-wrapper {
@@ -149,6 +151,7 @@ html, body {
     color: $grey-color;
     display: inline-flex;
     margin-top: 1em;
+
     //margin-left: -$spacing-unit / 2;
 
     @extend %clearfix;
@@ -156,6 +159,7 @@ html, body {
 
 .footer-col {
     float: left;
+
     //margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
@@ -198,7 +202,7 @@ html, body {
     }
 
     #footer_description, #gravatar_container, #footer_build_status,
-        .footer-heading, #license_link {
+    .footer-heading, #license_link {
         display: none;
     }
 
@@ -207,7 +211,7 @@ html, body {
     }
 
     .site-footer {
-      text-align: center;
+        text-align: center;
     }
 
     .social-media-list {
@@ -324,7 +328,7 @@ html, body {
 }
 
 #gravatar {
-    //margin-top: 5em;
+    margin-top: 1em;
 }
 
 table, td, th {
@@ -338,7 +342,6 @@ table, td, th {
 }
 
 ul, ol {
-
     list-style-type: persian;
 }
 
@@ -370,6 +373,7 @@ blockquote {
     padding: 0.35em;
     line-height: 1.45;
     position: relative;
+
     //background-color: lighten($grey-color, 47%);
 }
 
@@ -537,7 +541,6 @@ pre {
 .site-footer {
     padding-bottom: 0px;
 }
-
 
 .site-header {
     border-bottom: none;

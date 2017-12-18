@@ -41,6 +41,10 @@ You can override theme style by creating matching files with the same structure 
 
 
 ## Further customization
+
+### Styles
+You can create a `_sass` folder and put a file named `custom.scss` in it. This theme will load it by default.
+
 ### Layouts
 The following layouts are available for your homepage:
 - home: post titles along with an excerpt and pagination
