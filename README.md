@@ -77,3 +77,12 @@ In order to send pageviews to Google Analytics set your ID in the `_config.yml`:
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+<div dir="rtl" lang="fa">
+
+## در مورد فارسی‌نویسی
+در هنگام گزارش مشکلات یا شرح تغییرات، فارسی نوشتن خیلی هم خوب است. فقط یک شرط دارد! متن را درون تگ راست به چپ شده بنویسید که درست نمایش داده بشود. اگر هم دوست دارید انگلیسی بنویسید هیچ اشکالی ندارد.
+
+</div>
+
+    <div dir="rtl" lang="fa">مطلب مورد نظر</div>
