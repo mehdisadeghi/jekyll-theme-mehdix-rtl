@@ -1,17 +1,12 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+* {
     margin: 0;
 }
 
+html, body {
+  height: 100%;
+  padding: 0;
+}
 
-
-/**
- * Basic styling
- */
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -23,8 +18,6 @@ body {
     overflow-wrap: break-word;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -35,22 +28,12 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
 img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
 
-
-
-/**
- * Figures
- */
 figure > img {
     display: block;
 }
@@ -59,13 +42,9 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
-
-/**
- * Lists
- */
 ul, ol {
     margin-left: $spacing-unit;
+    list-style-type: persian;
 }
 
 li {
@@ -75,63 +54,63 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
-
-/**
- * Links
- */
 a {
-    color: $brand-color;
+ //   color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        //color: darken($brand-color, 15%);
+        color: darken($brand-color, 20%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        //color: $text-color;
+        //text-decoration: underline;
+        text-decoration: none;
+        color: $brand-color;
     }
 }
 
-
-
-/**
- * Blockquotes
- */
+/* Style for glyphs in quotation marks, courtesy of EnigmaRM http://stackoverflow.com/a/16326442/157216 */
 blockquote {
+    font-family: $alt-font-family;
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    //border-left: 4px solid $grey-color-light;
+    //padding-left: $spacing-unit / 2;
+    //font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
+
+    border-left: none;
+    padding-right: $spacing-unit / 2;
+    padding-left: none;
+    font-size: x-large;
+    margin: 0.25em 0;
+    padding: 0.35em;
+    line-height: 1.45;
+    position: relative;
 
     > :last-child {
         margin-bottom: 0;
     }
+
+    >  p {
+        border-right: 4px solid $brand-color;
+        padding-right: $spacing-unit / 2;
+    }
 }
 
 
-
-/**
- * Code formatting
- */
 pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    /* background-color: #eef; */
 }
 
 code {
@@ -140,7 +119,8 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+//    overflow-x: scroll;
+    overflow-x: auto;
     > code {
         border: 0;
         padding-right: 0;
@@ -148,11 +128,15 @@ pre {
     }
 }
 
+table, td, th {
+    border: 1px dotted;
+}
 
+h1, h2:not(.footer-heading), h3, h4, h5, h6 {
+    color: darken($header-color, 20%);
+    margin-bottom: unset;
+}
 
-/**
- * Wrapper
- */
 .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
@@ -171,11 +155,6 @@ pre {
     }
 }
 
-
-
-/**
- * Clearfix
- */
 %clearfix {
 
     &:after {
@@ -185,21 +164,15 @@ pre {
     }
 }
 
+@counter-style abjad {
+    system: additive;
+    range: 1 1000;
+    additive-symbols: 1000 "\63A", 900 "\638", 800 "\636", 700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634", 200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639", 60 "\633", 50 "\646", 40 "\645", 30 "\644", 20 "\6A9", 10 "\649", 9 "\637", 8 "\62D", 7 "\632", 6 "\648", 5 "\FEEB", 4 "\62F", 3 "\62C", 2 "\628", 1 "\627\644\641";
+}
 
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+@counter-style abjad-persian {
+    system: additive;
+    range: 1 1000;
+    additive-symbols: 1000 "\63A", 900 "\638", 800 "\636", 700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634", 200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639", 60 "\633", 50 "\646", 40 "\645", 30 "\644", 20 "\6AF", 10 "\649", 9 "\637", 8 "\62D", 7 "\698", 6 "\648", 5 "\FEEB", 4 "\62F", 3 "\686", 2 "\67E", 1 "\627\644\641";
+    suffix: ". ";
 }

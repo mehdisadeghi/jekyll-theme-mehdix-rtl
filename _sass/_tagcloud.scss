@@ -1,0 +1,69 @@
+/*
+ * Tag cloud sets. Numbers demonstrate repeat frequency for each tag
+ */
+#post-tags {
+    vertical-align: middle;
+
+    > i {
+        background-image: url($assets-dir + "/img/noun_4018.png");
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-top: 1px;
+        line-height: 14px;
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+    }
+
+    > a {
+        vertical-align: middle;
+    }
+}
+
+#tag-cloud [class^=set-] {
+    color: $text-color;
+
+    &:hover {
+        color: $brand-color;
+    }
+}
+
+.set-1 {
+    font-size: 0.7em;
+}
+
+.set-2 {
+    font-size: 0.8em;
+}
+
+.set-3 {
+    font-size: 0.9em;
+}
+
+.set-4 {
+    font-size: 1.0em;
+}
+
+.set-5 {
+    font-size: 1.1em;
+}
+
+.set-6 {
+    font-size: 1.2em;
+}
+
+.set-7 {
+    font-size: 1.3em;
+}
+
+.set-8 {
+    font-size: 1.4em;
+}
+
+.set-9 {
+    font-size: 1.5em;
+}
+
+.set-10 {
+    font-size: 1.6em;
+}

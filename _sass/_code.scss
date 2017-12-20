@@ -1,0 +1,93 @@
+/* To adapt different screen sizes, mostly for code blocks */
+@media screen and (max-width: 240px) {
+    pre {
+        width: 200px;
+    }
+
+    li .list-meta-col {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    li .list-meta-col {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 280px) {
+    pre {
+        width: 240px;
+    }
+}
+
+/*Including Apple iPhone 5 */
+@media screen and (min-width: 280px) and (max-width: 320px) {
+    pre {
+        width: 260px;
+    }
+}
+
+/*Including Apple iPhone 5 */
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    pre {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 400px) {
+    pre {
+        width: 340px;
+    }
+}
+
+/* Nexus 4 */
+@media screen and (min-width: 384px) and (max-width: 384px) {
+    pre {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 540px) {
+    pre {
+        width: 365px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 640px) {
+    pre {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    pre {
+        width: 600px;
+    }
+}
+
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    pre {
+        width: 705px;
+    }
+}
+
+/* Apple iPhone 6 */
+@media screen and (min-width: 375px) and (max-width: 375px) {
+    pre {
+        width: 323px;
+    }
+}
+
+/* Apple iPhone 6 Plus */
+@media screen and (min-width: 414px) and (max-width: 414px) {
+    pre {
+        width: 363px;
+    }
+}
+
+/* Correcting direction for code blocks */
+.code, .highlighter-coderay, .highlight {
+    direction: ltr;
+}

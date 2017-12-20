@@ -6,8 +6,12 @@
 /* Droid Arabic Naskh */
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 
+/* Noto Naskh Arabic */
+@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css); 
+
 /* Noto Kufi Arabic */
-//@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css); 
+@import url(https://fonts.googleapis.com/earlyaccess/notokufiarabic.css); 
+
 
 @font-face {
   font-family: "pfont";
@@ -20,6 +24,8 @@
 
 // Our variables
 $base-font-family: 'Droid Arabic Naskh', Arial, sans-serif;
+
+$alt-font-family: 'Noto Kufi Arabic';
 
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -69,9 +75,13 @@ $assets-dir:	   '{{ "assets" | absolute_url }}';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-	"pygments.css",
-  "base",
-  "layout",
-	"print",
-  "custom"
+    "pygments.css",
+    "base",
+    "layout",
+    "post",
+    "footer",
+    "tagcloud",
+    "code",
+    "print",
+    "custom"
 ;
