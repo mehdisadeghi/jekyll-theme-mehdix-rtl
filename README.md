@@ -51,7 +51,33 @@ The following layouts are available for your homepage:
 - minimal: only post titles
 
 ### Comments
-In order to enalbe disqus comments add `disqus_shortname` to your `_config.yml` file and define your disqus username.
+This theme supports three comment systems. First one is disqus.
+In order to enalbe disqus comments add `comment_system:disqus` and `disqus_shortname:DISQUS_USERNAME` to your `_config.yml` file.
+
+The second approach is static comments. In order to enable static comments add `comment_system:static` to the config
+file. This will load commends from `_data/comments` folder. There should be one YAML file per post. Name of the file
+should be the `uuid` of the post (each post must have a `uuid` in its front matter). The following sample defines two
+comments for post with `uuid` 0b64d07f-6c08-475b-a509-463df5458039:
+
+```yaml
+- date: 20171220
+  name: تقی
+  email: john@doe.com
+  url: https://johndoe.com
+  text: >
+      نوکرتم دادا!
+      کوجایی تو؟
+
+- date: 20171221
+  name: تقی ۲
+  email: john@doe.com
+  url: https://johndoe.com
+  text: >
+      [۲] دادا خبری نیت ازت
+```
+
+For the time being I am using Netlify to handle custom comment forms on each post page and add them to the
+comments using the [`netlify_comments.py`](./netlify_comments.py) script.
 
 ### Forcing RTL code blocks
 If you put code blocks and they appear incorrectly, you can use _Markright gem. First add it to your Gemfile:

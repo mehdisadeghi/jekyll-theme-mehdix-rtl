@@ -41,6 +41,7 @@ collections:
   projects:
     output: true
 
+#comment_system: static # or disqus. Default is no comments.
 #disqus_shortname: mehdix
 #google_analytics_id: UA-57282325-1
 feedburner_id: mehdixir
