@@ -14,7 +14,7 @@
                 {{ comment.name }}
             {% endif %}
           </small>
-          <small class="post-meta"> •&nbsp {{ comment.date | jdate: "%A %d %b %Y" | habify }}</small>
+          <small class="post-meta"> •&nbsp {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
           <p>{{ comment.message }}</p>
         </div>
       </article>
