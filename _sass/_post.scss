@@ -146,9 +146,15 @@
     display: grid;
 
     article {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
         margin-top: 1em;
         width: 100%;
         border-top: 1px solid #f2f3f3;
+
+        p {
+            white-space: pre-wrap;
+        }
     }
 }
 
