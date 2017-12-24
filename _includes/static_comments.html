@@ -7,9 +7,15 @@
       <article>
         <div class="comment-image-wrapper"><img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" /></div>
         <div class="comment-body-wrapper">
-          <h5 style="display: inline"><a href={{comment.url}}>{{ comment.name }}</a></h5>
-          <p class="post-meta" style="display: inline"> •&nbsp {{ comment.date }}</p>
-          <p>{{ comment.text }}</p>
+          <small>
+            {% if comment.website %}
+                <a href={{comment.website}}>{{ comment.name }}</a>
+            {% else %}
+                {{ comment.name }}
+            {% endif %}
+          </small>
+          <small class="post-meta"> •&nbsp {{ comment.date | jdate: "%A %d %b %Y" | habify }}</small>
+          <p>{{ comment.message }}</p>
         </div>
       </article>
       {% endfor%}

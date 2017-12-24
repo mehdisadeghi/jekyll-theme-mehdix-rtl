@@ -146,8 +146,7 @@
     display: grid;
 
     article {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
+        display: flex;
         margin-top: 1em;
         width: 100%;
         border-top: 1px solid #f2f3f3;
@@ -159,12 +158,11 @@
 }
 
 .comment-image-wrapper {
-    width: 4em;
-    float: right;
+    width: 77px;
 }
 
 .comment-body-wrapper {
-    float: right;
+    flex-grow: 1;
 }
 
 .pagination {
