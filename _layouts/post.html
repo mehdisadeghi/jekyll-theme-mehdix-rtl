@@ -11,7 +11,6 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-  {% if site.disqus_shortname %} {% include disqus.html %} {% endif %}
   <small id="post-tags">
     {% for tag in page.tags %}
       <i class="icon-tags"></i>
@@ -35,7 +34,7 @@ layout: default
 
 {% if site.comment_system == 'static' %}
  {% include static_comments.html %}
-{% elsif site.coment_system == 'disqus' %}
+{% elsif site.comment_system == 'disqus' %}
  {% include disqus.html %}
 {% endif %}
 
