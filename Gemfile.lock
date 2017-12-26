@@ -7,6 +7,7 @@ PATH
       jekyll-hinduarabic (~> 0.1)
       jekyll-jalali (~> 0.1)
       jekyll-paginate (~> 1.1)
+      jekyll-seo-tag (~> 2.4)
       jekyll-sitemap (~> 1.1)
 
 GEM
@@ -37,6 +38,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
+    jekyll-seo-tag (2.4.0)
+      jekyll (~> 3.3)
     jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
     jekyll-tagging (1.1.0)
@@ -75,6 +78,7 @@ DEPENDENCIES
   jekyll-default-layout
   jekyll-hinduarabic
   jekyll-jalali
+  jekyll-seo-tag
   jekyll-tagging
   jekyll-theme-mehdix-rtl!
   rake (~> 10.0)

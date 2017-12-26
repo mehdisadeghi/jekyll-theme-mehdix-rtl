@@ -36,12 +36,21 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-hinduarabic
+  - jekyll-seo-tag
 
 collections:
   projects:
     output: true
 
-#comment_system: static # or disqus. Default is no comments.
+#comment_system: disqus # or disqus. Default is no comments.
 #disqus_shortname: mehdix
 #google_analytics_id: UA-57282325-1
 feedburner_id: mehdixir
+
+# SEO
+twitter:
+  username: mehdisadeghii
+github:
+  username: mehdisadeghi
+logo: assets/img/me.png
+lang: fa_IR

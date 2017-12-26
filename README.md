@@ -36,9 +36,19 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-mehdix-rtl
 
-
 You can override theme style by creating matching files with the same structure inside your Jekyll source tree. See Jekyll [Themes docs](https://jekyllrb.com/docs/themes/) for more information on that.
 
+### Enable the Plugins
+This theme uses some jekyll plugins. Enable them by adding them to the `plugins` section in the config file:
+
+```yaml
+plugins:
+  - jekyll-jalali
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-hinduarabic
+  - jekyll-seo-tag
+```
 
 ## Further customization
 
@@ -103,6 +113,12 @@ If any of the following ids is present in the config a corresponding item will b
 ### Analytics
 In order to send pageviews to Google Analytics set your ID in the `_config.yml`: `google_analytics_id: YOUR_ID`
 
+
+### SEO
+Make sure to fill entries in the config file correctly to get a better search engine experience.
+Specially fill the SEO section with your Github and Twitter usernames. Don't forget to add `lang`
+and `logo` entries. See [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag/) for further
+information.
 
 ## License
 
