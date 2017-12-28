@@ -2,21 +2,8 @@
  * Tag cloud sets. Numbers demonstrate repeat frequency for each tag
  */
 #post-tags {
-    vertical-align: middle;
-
-    > i {
-        background-image: url($assets-dir + "/img/noun_4018.png");
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        margin-top: 1px;
-        line-height: 14px;
-        background-repeat: no-repeat;
-        background-size: 15px 15px;
-    }
-
-    > a {
-        vertical-align: middle;
+    a {
+        margin-left: 0.5em;
     }
 }
 
