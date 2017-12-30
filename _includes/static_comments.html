@@ -1,48 +1,56 @@
- <section id="static-comments">
-
-    {% assign comments = site.data.comments[page.uuid] %}
-    {% if comments %}
-    <div id="comments">
-      <h4>نظرات سایر خوانندگان</h4> {% for comment in comments %}
+{% capture newLine %}
+{% endcapture %}
+<section id="static-comments">
+  {% capture key %}{{ page.id | remove_first: "/" }}{% endcapture %}
+  {% assign comments = site.data.comments[key] %}
+  {% if comments %}
+  <div id="comments">
+    <h4>کامنت‌دونی</h4>
+    {% for comment in comments %}
       <article>
-        <div class="comment-image-wrapper"><img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" /></div>
+        <div class="comment-image-wrapper">
+          <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" />
+        </div>
         <div class="comment-body-wrapper">
-          <small>
-            {% if comment.website %}
+          <span class="comment-meta">
+            <small>
+              {% if comment.website != '' %}
                 <a href={{comment.website}}>{{ comment.name }}</a>
-            {% else %}
+              {% else %}
                 {{ comment.name }}
-            {% endif %}
-          </small>
-          <small class="post-meta"> •&nbsp {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
-          <p>{{ comment.message }}</p>
+              {% endif %}
+            </small>
+            <small class="post-meta"> &nbsp {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
+          </span>
+          {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>
       </article>
-      {% endfor%}
+    {% endfor%}
+  </div>
+  {% endif %}
+
+  <form id="comment-form" name="comment" netlify>
+    <input name="bot-field" style="display:none">
+    <input name="page_id" style="display:none" value="{{page.id}}">
+    <input name="page_uuid" style="display:none" value="{{page.uuid}}">
+    <input name="page_date" style="display:none" value="{{page.date}}">
+    <input name="page_title" style="display:none" value="{{page.title}}">
+    <label for="message">دیدگاه &nbsp<small>با <a href="http://commonmark.org/help/">مارک‌داون</a> هم می‌توانید بنویسید.
+      برای نقل قول از <strong>&gt;&nbsp;</strong>استفاده کنید.</small>
+      <textarea id="message" name="message" required alt="no!!"></textarea>
+    </label>
+    <label for="name">نام
+      <input id="name" type="text" name="name" required>
+    </label>
+    <label for="email">ایمیل
+      <input id="email" type="email" name="email" required>
+    </label>
+    <label for="website">وبسایت
+      <input id="website" type="url" name="website">
+    </label>
+    <div style="text-align:left">
+      <button type="submit">ارسال</button>
     </div>
-    {% endif %}
+  </form>
 
-    <form id="comment-form" name="comment" netlify>
-      <input name="bot-field" style="display:none">
-      <input name="page_id" style="display:none" value="{{page.id}}">
-      <input name="page_uuid" style="display:none" value="{{page.uuid}}">
-      <input name="page_date" style="display:none" value="{{page.date}}">
-      <input name="page_title" style="display:none" value="{{page.title}}">
-      <label for="message">دیدگاه
-        <textarea id="message" name="message" required alt="no!!"></textarea>
-      </label>
-      <label for="name">نام
-        <input id="name" type="text" name="name" required>
-      </label>
-      <label for="email">ایمیل
-        <input id="email" type="email" name="email" required>
-      </label>
-      <label for="website">وبسایت
-        <input id="website" type="url" name="website">
-      </label>
-      <div style="text-align:left">
-        <button type="submit">ارسال</button>
-      </div>
-    </form>
-
-  </section>
+</section>

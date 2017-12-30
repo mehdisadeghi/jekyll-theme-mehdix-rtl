@@ -143,7 +143,6 @@
 }
 
 #comments {
-    display: grid;
 
     article {
         display: flex;
@@ -154,15 +153,28 @@
         p {
             white-space: pre-wrap;
         }
+
+        blockquote {
+            font-size: inherit;
+        }
     }
 }
 
 .comment-image-wrapper {
-    width: 77px;
+    box-sizing: border-box;
+    max-width: 65px;
+    margin: 0.5em;
+    img {
+        clip-path: circle();
+    }
 }
 
 .comment-body-wrapper {
     flex-grow: 1;
+}
+
+.comment-meta {
+    display: flex;
 }
 
 .pagination {

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-mehdix-rtl (0.1.18)
+    jekyll-theme-mehdix-rtl (0.1.20)
       jekyll (~> 3.3)
       jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
@@ -84,4 +84,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
