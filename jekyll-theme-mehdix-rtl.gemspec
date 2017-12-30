@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-mehdix-rtl"
-  spec.version       = "0.1.20"
+  spec.version       = "0.1.21"
   spec.authors       = ["Mehdi Sadeghi"]
   spec.email         = ["mehdi@mehdix.org"]
 
