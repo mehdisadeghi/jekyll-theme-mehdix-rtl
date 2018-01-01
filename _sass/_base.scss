@@ -90,23 +90,15 @@ blockquote {
     }
 }
 
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
+pre.highlight {
+    direction: ltr;
     border-radius: 3px;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
+    border: 1px solid $grey-color-light;
     padding: 8px 12px;
     overflow-x: auto;
     > code {
+        font-size: 15px;
         border: 0;
-        padding-right: 0;
         padding-left: 0;
     }
 }
@@ -127,7 +119,6 @@ h1, h2:not(.footer-heading), h3, h4, h5, h6 {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
 
     @include media-query($on-laptop) {
         //max-width: -webkit-calc(800px - (#{$spacing-unit}));
@@ -135,15 +126,6 @@ h1, h2:not(.footer-heading), h3, h4, h5, h6 {
         width: 89vw;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
-}
-
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 

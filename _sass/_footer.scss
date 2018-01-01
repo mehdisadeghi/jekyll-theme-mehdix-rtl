@@ -35,8 +35,6 @@
     color: $grey-color;
     display: inline-flex;
     margin-top: 1em;
-
-    @extend %clearfix;
 }
 
 .footer-col {
