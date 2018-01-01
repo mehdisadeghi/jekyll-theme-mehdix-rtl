@@ -10,17 +10,9 @@
     h2 {
         margin-bottom: initial;
     }
-}
-
-#post-list {
-    list-style: none;
 
     a {
         color: $text-color;
-    }
-
-    a:hover {
-        color: $brand-color;
     }
 }
 
@@ -72,44 +64,12 @@
 
     a {
         border-bottom: 1px dotted;
-        color: darken($brand-color, 10%);
     }
 
     iframe {
         width: 100%;
     }
 
-    h1 {
-        font-size: 34px;
-
-        @include media-query($on-laptop) {
-            font-size: 36px;
-        }
-    }
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
 }
 
 #comment-form {
