@@ -20,7 +20,7 @@
                 {{ comment.name }}
               {% endif %}
             </small>
-            <small class="post-meta"> &nbsp {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
+            <small class="post-meta"> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
           </span>
           {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>
@@ -35,14 +35,13 @@
     <input name="page_uuid" style="display:none" value="{{page.uuid}}">
     <input name="page_date" style="display:none" value="{{page.date}}">
     <input name="page_title" style="display:none" value="{{page.title}}">
-    <label for="message">دیدگاه &nbsp<small>با <a href="http://commonmark.org/help/">مارک‌داون</a> هم می‌توانید بنویسید.
-      برای نقل قول از <strong>&gt;&nbsp;</strong>استفاده کنید.</small>
+    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با<a href="http://commonmark.org/help/">مارک‌داون</a> هم بنویسید.</small>
       <textarea id="message" name="message" required alt="no!!"></textarea>
     </label>
-    <label for="name">نام
+    <label for="name">نام<sup class="required">*</sup>
       <input id="name" type="text" name="name" required>
     </label>
-    <label for="email">ایمیل
+    <label for="email">ایمیل<sup class="required">*</sup>
       <input id="email" type="email" name="email" required>
     </label>
     <label for="website">وبسایت
