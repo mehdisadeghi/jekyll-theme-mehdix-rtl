@@ -31,13 +31,6 @@ paginate_path: "/page:num/"
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-plugins:
-  - jekyll-jalali
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-hinduarabic
-  - jekyll-seo-tag
-
 collections:
   projects:
     output: true

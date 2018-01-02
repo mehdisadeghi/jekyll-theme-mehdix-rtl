@@ -172,3 +172,10 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+#related-posts {
+    background: rgba(242, 243, 243, 0.48) none repeat scroll 0% 0%;
+    a {
+        color: $text-color;
+    }
+}

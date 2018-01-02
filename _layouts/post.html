@@ -11,6 +11,19 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+
+  {% if site.related_posts.size >= 1 %}
+  <div id="related-posts">
+    <h3>شاید دوست داشته باشی</h3>
+    <ul>
+    {% for related_post in site.related_posts limit: 5 %}
+      <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+
   <small id="post-tags">
     {% for tag in page.tags %}
     <!--i class="fas fa-tag"></i-->
@@ -36,7 +49,6 @@ layout: default
     <a href="#" class="pagination--pager disabled"">بعدی</a>
     {% endif %}
   </nav>
-
 
   {% if site.comment_system == 'static' %}
   {% include static_comments.html %}

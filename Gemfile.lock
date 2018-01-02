@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-mehdix-rtl (0.1.20)
+    jekyll-theme-mehdix-rtl (0.1.21)
       jekyll (~> 3.3)
       jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
@@ -44,6 +44,9 @@ GEM
       jekyll (~> 3.3)
     jekyll-tagging (1.1.0)
       nuggets
+    jekyll-tagging-related_posts (1.0.0)
+      jekyll (~> 3.0)
+      jekyll-tagging (~> 1.0)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
     kramdown (1.16.2)
@@ -78,8 +81,11 @@ DEPENDENCIES
   jekyll-default-layout
   jekyll-hinduarabic
   jekyll-jalali
+  jekyll-paginate
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-tagging
+  jekyll-tagging-related_posts
   jekyll-theme-mehdix-rtl!
   rake (~> 10.0)
 
