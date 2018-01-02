@@ -145,6 +145,10 @@
     display: inline-block;
     width: 160px;
     text-align: right;
+
+    @include media-query(400px) {
+        display: none;
+    }
 }
 
 .icon {
