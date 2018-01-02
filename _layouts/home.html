@@ -25,13 +25,13 @@ layout: default
   </ul>
 
   <nav class="pagination">
-    {% if page.previous %}
+    {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | absolute_url }}" class="pagination--pager" title="{{ page.previous.title }}">قبلی </a>
     {% else %}
     <a href="#" class="pagination--pager disabled"">قبلی </a>
     {% endif %}
 
-    {% if page.next %}
+    {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | absolute_url }}" class="pagination--pager" title="{{ page.next.title }}">بعدی</a>
     {% else %}
     <a href="#" class="pagination--pager disabled"">بعدی</a>
