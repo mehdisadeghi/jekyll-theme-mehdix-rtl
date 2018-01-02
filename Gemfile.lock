@@ -9,6 +9,8 @@ PATH
       jekyll-paginate (~> 1.1)
       jekyll-seo-tag (~> 2.4)
       jekyll-sitemap (~> 1.1)
+      jekyll-tagging-related_posts (~> 1.0)
+      liquid_reading_time (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -51,11 +53,17 @@ GEM
       listen (~> 3.0)
     kramdown (1.16.2)
     liquid (4.0.0)
+    liquid_reading_time (1.1.3)
+      liquid (>= 2.6, < 5.0)
+      nokogiri (~> 1.6)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     nuggets (1.5.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
@@ -87,6 +95,7 @@ DEPENDENCIES
   jekyll-tagging
   jekyll-tagging-related_posts
   jekyll-theme-mehdix-rtl!
+  liquid_reading_time
   rake (~> 10.0)
 
 BUNDLED WITH
