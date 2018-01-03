@@ -2,14 +2,12 @@
 layout: default
 ---
 <div class="home">
-  <h1 class="page-heading"></h1>
-
   <ul class="post-list">
   {% if paginator %}
     {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-        <h2><a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+      <li class="post-list-item">
+        <span class="meta date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span>
+        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
         {{ post.content | strip_html | truncatewords: 35 }}
       </li>
     {% endfor %}
@@ -17,7 +15,7 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-meta"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-        <h2><a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
         {{ post.content | strip_html | truncatewords: 35 }}
       </li>
     {% endfor %}

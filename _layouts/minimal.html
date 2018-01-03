@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="home">
   <h1 class="page-heading">❖ &nbsp; همه‌ی نوشته‌ها</h1>
-  <ul class="post-list">
+  <ul class="post-list-mini">
     {% for post in site.posts %}
-      <li>
+      <li class="post-list-item">
         <span class="list-meta-col">
           <span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span>
         </span>

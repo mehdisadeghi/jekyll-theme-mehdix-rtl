@@ -2,9 +2,20 @@
     list-style: none;
 
     h2 {
-        margin-bottom: initial;
+        margin-top: 0;
+        font-weight: bold;
+        a {
+            color: darken($brand-color, 10%);
+        }
     }
 
+    .post-list-item {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-list-mini {
+    list-style: none;
     a {
         color: $text-color;
     }
