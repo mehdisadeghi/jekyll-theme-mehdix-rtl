@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1.0" />
+
   {%- if page.tags -%}
     <meta name="keywords" content='{{ page.tags | join: "," }}' />
   {%- elsif page.url contains site.tag_page_dir -%}
@@ -8,24 +9,32 @@
   {%- else -%}
     <meta name="keywords" content='{{ site.keywords | split: " " | join: "," }}' />
   {%- endif -%}
+
   <meta name="author" content="{{ site.author}}" />
   <meta name="copyright" content="{{ site.copyright }}" />
   <meta name="robot" content="{{ site.robot }}" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="{{ site.description | strip_newlines}}" />
+
   {%- if page.title -%}
     <title>{{ page.title }} - {{ site.title}}</title>
   {%- else -%}
     <title>{{ site.title }}</title>
   {%- endif -%}
-  <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/fa-svg-with-js.css' | absolute_url }}" />
+
   <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}" />
   <link rel="icon" href="{{ site.favicon | absolute_url}}" />
+
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/fonts/fontawesomev5.0.2.css' | absolute_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/fonts/droidarabicnaskh.css' | absolute_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/fonts/notokufiarabic.css' | absolute_url }}" />
+
   {%- if page.style -%}
     <style type="text/css">
     {{ page.style }}
     </style>
   {%- endif -%}
+
   {% seo %}
 </head>
