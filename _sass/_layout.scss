@@ -1,119 +1,36 @@
-.container {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.content {
-    display: table-row;
-    height: 100%;
-}
-
 .wrapper {
+    margin: 0 auto;
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin: 0 auto;
-    padding: 0 $spacing-unit;
 
     @include media-query($on-laptop) {
         width: 89vw;
-        padding: 0 $spacing-unit / 2;
     }
 }
 
-.site-header {
-    min-height: 56px;
+header {
     position: relative;
-    border-bottom: none;
 
     background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
     background-color: #282828;
     background-size: 16px 16px;
-    border-top: none;
     color: white;
 }
 
 .site-title {
-    float: right;
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     color: white;
 
-    &,
     &:visited {
         color: white;
     }
 }
 
-.site-nav {
-    float: left;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        right: -webkit-calc(88% - (#{$spacing-unit} / 2));
-        right: calc(88% - (#{$spacing-unit} / 2));
-        position: absolute;
-        top: 9px;
-        //right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
-
-.page-content {
-    padding: $spacing-unit 0;
+#motto {
+    vertical-align: calc(40%);
 }
 
 .page-heading {
@@ -141,10 +58,17 @@
     border-color: $brand-color;
 }
 
+.meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
 .list-meta-col {
+    @extend .meta;
     display: inline-block;
     width: 160px;
     text-align: right;
+
 
     @include media-query(400px) {
         display: none;

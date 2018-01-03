@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-{% include head.html %}
+  
+  {%- include head.html -%}
 
-<body>
-  <div class="container">
-    <header class="site-header">
+  <body>
+
+    {%- include header.html -%}
+
+    <main>
       <div class="wrapper">
-        <a class="site-title" href="{{ '' | absolute_url}}">{{ site.title }}</a>
-        <small id="motto"> {{ site.motto }} </small>
+        {{- content -}}
       </div>
-    </header>
-    <section class="content">
-      <div class="page-content">
-        <div class="wrapper">
-          {{- content -}}
-        </div>
-      </div>
-    </section>
-    {%- include footer.html -%}
-  </div>
-  <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-</body>
+    </main>
 
+    {%- include footer.html -%}
+
+    <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
+    {% if site.google_analytics_id %} {% include analyticstracking.html %} {% endif %}
+  </body>
 </html>

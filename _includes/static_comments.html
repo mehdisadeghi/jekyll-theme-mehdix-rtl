@@ -20,7 +20,7 @@
                 {{ comment.name }}
               {% endif %}
             </small>
-            <small class="post-meta"> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
+            <small class="meta"> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
           </span>
           {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>

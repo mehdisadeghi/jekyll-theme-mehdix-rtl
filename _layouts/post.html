@@ -3,21 +3,20 @@ layout: default
 ---
 
 {% capture time %}{{ content | reading_time }}{% endcapture %}
-<div class="post">
-  <header class="post-header">
+<article class="post-content">
+
+  <div class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-      <p>
-        <i class="fas fa-calendar"></i>
-        {{ page.date | jdate: "%d %b %Y" | habify}}<br>
-        
-        <i class="fas fa-stopwatch"></i>
-        {{ time | habify }} دقیقه مطالعه
-      </p>
-  </header>
-  <article class="post-content">
-    {{ content }}
-  </article>
+    <p>
+      <i class="fas fa-calendar"></i>
+      {{ page.date | jdate: "%d %b %Y" | habify}}<br>
+      
+      <i class="fas fa-stopwatch"></i>
+      {{ time | habify }} دقیقه مطالعه
+    </p>
+  </div>
+
+  {{ content }}
 
   {% if site.related_posts.size >= 1 %}
   <div id="related-posts">
@@ -54,10 +53,12 @@ layout: default
     {% endif %}
   </nav>
 
-  {% if site.comment_system == 'static' %}
-  {% include static_comments.html %}
-  {% elsif site.comment_system == 'disqus' %}
-  {% include disqus.html %}
-  {% endif %}
+  <section>
+    {% if site.comment_system == 'static' %}
+    {% include static_comments.html %}
+    {% elsif site.comment_system == 'disqus' %}
+    {% include disqus.html %}
+    {% endif %}
+  </section>
 
-</div>
+</article>
