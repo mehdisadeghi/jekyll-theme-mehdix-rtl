@@ -22,14 +22,6 @@ footer {
     margin-left: 0;
 }
 
-.social-media-list .icon {
-    width: 1em;
-}
-
-#mail-icon {
-    filter: invert(100);
-}
-
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
@@ -77,8 +69,8 @@ footer {
         padding-left: unset;
     }
 
-    #footer_description, #gravatar_container, #footer_build_status,
-    .footer-heading, #license_link {
+    #footer_description, #footer-gravatar, #atom,
+    .footer-heading, #license-link {
         display: none;
     }
 
@@ -99,29 +91,29 @@ footer {
     #motto {
         display: none;
     }
-
-    .social-media-list li {
-        margin-right: 4px;
-    }
-
-    ul, ol {
-        margin-right: auto;
-    }
 }
 
-.circle {
-    clip-path: circle();
-    width: 100px;
-}
-
-#gravatar {
-    margin-top: 1em;
+#footer-gravatar {
+    text-align: center;
+    img {
+        margin-top: 1em;
+        clip-path: circle();
+        width: 100px;
+    }
 }
 
 #license {
     font-style: small;
+    text-align: center;
 }
 
-#footer_build_status {
+#atom {
     width: 4em;
+}
+
+#build-time {
+    color: gray;
+    font-family: monospace;
+    font-size:x-small;
+    text-align: center;
 }

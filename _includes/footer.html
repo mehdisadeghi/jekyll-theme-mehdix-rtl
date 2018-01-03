@@ -1,57 +1,68 @@
-<footer class="site-footer">
+<footer>
   <div class="wrapper">
+
     <div class="footer-col-wrapper">
-    <div id="gravatar_container" class="footer-col footer-col-2">
-      <img  id="gravatar" class="circle" src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
-    </div>
-    <div id="footer_description" class="footer-col footer-col-3">
-      <p class="text">{{ site.long_description }}</p>
-    </div>
-    <div class="footer-col footer-col-2">
-      <ul class="social-media-list">
-        {% if site.github_username %}
-        <li>
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/{{ site.github_username }}">
-            <span class="username social-media-text">پروژه‌ها</span>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.twitter_username %}
-        <li>
-          <i class="fab fa-twitter-square"></i>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <span class="username social-media-text">توئیت‌ها</span>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.feedburner_id %}
-        <li>
-          <i class="fas fa-rss"></i>
-          <a href="https://feedburner.google.com/fb/a/mailverify?uri={{ site.feedburner_id }}&amp;loc=en_US">
-            <span class="username social-media-text">خبرنامه</span></a>
-        </li>
-        <li>
-          <i class="fas fa-rss"></i>
-          <a href="http://feeds.feedburner.com/mehdixir">
-          <span class="username social-media-text">خوراک</span></a>
-        </li>
-        {% endif %}
-        {% if site.email %}
+
+      <div id="footer-gravatar" class="footer-col footer-col-2">
+        <img src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
+      </div>
+
+      <div id="footer_description" class="footer-col footer-col-3">
+        <p class="text">{{ site.long_description }}</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+
+        <ul class="social-media-list">
+          {% if site.github_username %}
           <li>
-            <i class="fas fa-envelope-open"></i>
-            <a href="mailto:{{ site.email }}">
-              <span class="username social-media-text">تماس</span></a></li>
-        {% endif %}
-        <li id="footer_build_status">
-          <span class="icon"><a href="https://validator.w3.org/feed/check.cgi?url={{ '' | absolute_url | append:'feed.xml'}}"><img src={{ "assets/img/valid-atom.png" | absolute_url }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
-        </li>
-      </ul>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="username social-media-text">پروژه‌ها</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.twitter_username %}
+          <li>
+            <i class="fab fa-twitter-square"></i>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="username social-media-text">توئیت‌ها</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.feedburner_id %}
+          <li>
+            <i class="fas fa-rss"></i>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri={{ site.feedburner_id }}&amp;loc=en_US">
+              <span class="username social-media-text">خبرنامه</span></a>
+          </li>
+          <li>
+            <i class="fas fa-rss"></i>
+            <a href="http://feeds.feedburner.com/mehdixir">
+            <span class="username social-media-text">خوراک</span></a>
+          </li>
+          {% endif %}
+          {% if site.email %}
+            <li>
+              <i class="fas fa-envelope-open"></i>
+              <a href="mailto:{{ site.email }}">
+                <span class="username social-media-text">تماس</span></a></li>
+          {% endif %}
+          <li id="atom">
+            <span class="icon"><a href="https://validator.w3.org/feed/check.cgi?url={{ '' | absolute_url | append:'feed.xml'}}"><img src={{ "assets/img/valid-atom.png" | absolute_url }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
+          </li>
+        </ul>
+
+      </div>
+
     </div>
+
+    {% include license.html %}
+
   </div>
-  {% include license.html %}
+
+  <div id="build-time">
+    <small>Site generated on {{ site.time | date_to_rfc822 }}</small>
   </div>
-  <div class="center">
-    <small style="color:gray">Site generated on {{ site.time | date_to_rfc822 }}</small>
-  </div>
+
 </footer>

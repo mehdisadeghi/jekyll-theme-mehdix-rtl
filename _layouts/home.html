@@ -1,39 +1,27 @@
 ---
 layout: default
 ---
-<div class="home">
-  <ul class="post-list">
-  {% if paginator %}
-    {% for post in paginator.posts %}
-      <li class="post-list-item">
-        <span class="meta date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span>
-        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-        {{ post.content | strip_html | truncatewords: 35 }}
-      </li>
-    {% endfor %}
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    <li class="post-list-item">
+      <span class="meta date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span>
+      <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+      {{ post.content | strip_html | truncatewords: 35 }}
+    </li>
+  {% endfor %}
+</ul>
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | absolute_url }}" class="pagination--pager" title="{{ page.previous.title }}">قبلی </a>
   {% else %}
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta"><span class="date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span></span>
-        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-        {{ post.content | strip_html | truncatewords: 35 }}
-      </li>
-    {% endfor %}
+  <a href="#" class="pagination--pager disabled"">قبلی </a>
   {% endif %}
-  </ul>
 
-  <nav class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | absolute_url }}" class="pagination--pager" title="{{ page.previous.title }}">قبلی </a>
-    {% else %}
-    <a href="#" class="pagination--pager disabled"">قبلی </a>
-    {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | absolute_url }}" class="pagination--pager" title="{{ page.next.title }}">بعدی</a>
+  {% else %}
+  <a href="#" class="pagination--pager disabled"">بعدی</a>
+  {% endif %}
+</nav>
 
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | absolute_url }}" class="pagination--pager" title="{{ page.next.title }}">بعدی</a>
-    {% else %}
-    <a href="#" class="pagination--pager disabled"">بعدی</a>
-    {% endif %}
-  </nav>
-
-</div>

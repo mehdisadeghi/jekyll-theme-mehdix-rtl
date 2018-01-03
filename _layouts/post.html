@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% capture time %}{{ content | reading_time }}{% endcapture %}
+
 <article class="post-content">
 
   <div class="post-header">
@@ -19,20 +20,20 @@ layout: default
   {{ content }}
 
   {% if site.related_posts.size >= 1 %}
-  <div id="related-posts">
-    <h3>مطالب مرتبط</h3>
-    <ul>
-    {% for related_post in site.related_posts limit: 5 %}
-      <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </div>
+    <div id="related-posts">
+      <h3>مطالب مرتبط</h3>
+      <ul>
+        {% for related_post in site.related_posts limit: 5 %}
+          <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
   {% endif %}
 
   <small id="post-tags">
     {% for tag in page.tags %}
-    <i class="fas fa-tag"></i>
-    <a rel="tag" href="{{ tag | tag_url  }}">{{tag}}</a>
+      <i class="fas fa-tag"></i>
+      <a rel="tag" href="{{ tag | tag_url  }}">{{tag}}</a>
     {% endfor %}
 
     <i class="fas fa-code"></i>
@@ -41,23 +42,23 @@ layout: default
 
   <nav class="pagination">
     {% if page.next %}
-    <a href="{{ page.next.url | absolute_url }}" class="pagination--pager" title="{{ page.next.title }}">قبلی</a>
+      <a href="{{ page.next.url | absolute_url }}" class="pagination--pager" title="{{ page.next.title }}">قبلی</a>
     {% else %}
-    <a href="#" class="pagination--pager disabled">قبلی</a>
+      <a href="#" class="pagination--pager disabled">قبلی</a>
     {% endif %}
 
     {% if page.previous %}
-    <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title }}">بعدی </a>
+      <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title }}">بعدی </a>
     {% else %}
-    <a href="#" class="pagination--pager disabled">بعدی </a>
+      <a href="#" class="pagination--pager disabled">بعدی </a>
     {% endif %}
   </nav>
 
   <section>
     {% if site.comment_system == 'static' %}
-    {% include static_comments.html %}
+      {% include static_comments.html %}
     {% elsif site.comment_system == 'disqus' %}
-    {% include disqus.html %}
+      {% include disqus.html %}
     {% endif %}
   </section>
 
