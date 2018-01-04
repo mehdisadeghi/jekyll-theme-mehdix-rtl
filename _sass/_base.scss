@@ -93,12 +93,12 @@ blockquote {
     letter-spacing: -1px;
     line-height: 1.45;
     color: $grey-color;
+    margin: 0;
+    background-color: lighten($brand-color, 55%);
 
-    padding-right: $spacing-unit / 2;
-    
     >  p {
         border-right: 4px solid $brand-color;
-        padding-right: $spacing-unit / 2;
+        padding: $spacing-unit / 2;
     }
 }
 

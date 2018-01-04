@@ -22,13 +22,11 @@
 }
 
 .post-header {
-    margin-bottom: $spacing-unit;
-    p {
-        margin-top: 0;
-    }
+    margin: $spacing-unit auto;
 }
 
 .post-title {
+    margin-bottom: $spacing-unit / 2;
     letter-spacing: -1px;
     line-height: 1.25;
     text-align: center;
