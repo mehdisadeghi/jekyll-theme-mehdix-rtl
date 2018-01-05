@@ -1,28 +1,5 @@
-.post-list {
-    list-style: none;
-
-    h2 {
-        margin-top: 0;
-        font-weight: bold;
-        a {
-            color: darken($brand-color, 10%);
-        }
-    }
-
-    .post-list-item {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-list-mini {
-    list-style: none;
-    a {
-        color: $text-color;
-    }
-}
-
 .post-header {
-    margin: $spacing-unit auto;
+    margin: 4em auto;
 }
 
 .post-title {
@@ -32,7 +9,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 4em;
-    color: darken($brand-color, 10%);
+    color: $header-color;//a friendly dark color. darken($header-color, 10%);
 
     @include media-query($on-laptop) {
         font-size: 4em;
@@ -56,27 +33,27 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
-    a {
-        border-bottom: 1px dotted;
+    ul, ol {
+        margin-left: $spacing-unit / 2;
     }
 
     iframe {
         width: 100%;
     }
 
-    p {
-        margin-top: 0;
+    a {
+        color: darken($brand-color, 10%)
     }
 }
 
 #related-posts {
-    background: rgba(242, 243, 243, 0.48) none repeat scroll 0% 0%;
+    background: lighten($brand-color, 55%);
+    padding: $spacing-unit / 2;
     a {
         color: $text-color;
     }
-
-    ul {
-        margin-top: 0;
+    * {
+        margin: 0;
     }
 }
 
@@ -86,8 +63,8 @@
     padding-top: 1em;
     padding-bottom: 1em;
     display: flex;
-    border-top: 1px solid #f2f3f3;
-    border-bottom: 1px solid #f2f3f3;
+    /*border-top: 1px solid #f2f3f3;
+    border-bottom: 1px solid #f2f3f3;*/
 }
 
 .pagination--pager.disabled {
@@ -101,7 +78,7 @@
     width: 50%;
     font-weight: bold;
     text-align: center;
-    border: 1px solid #b6b6b6;
+    border: 1px solid lighten($brand-color, 50%);
     border-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -113,7 +90,7 @@
 }
 
 #comment-form {
-    background: rgba(242, 243, 243, 0.48) none repeat scroll 0% 0%;
+    background: lighten($brand-color, 55%);
     padding: 15px;
 
     label {
@@ -126,6 +103,7 @@
         width: 100%;
         box-sizing: border-box;
         font-family: $base-font-family;
+        border: 1px solid lighten($brand-color, 50%);
     }
 
     input:focus, textarea:focus {
@@ -149,16 +127,22 @@
 #comments article {
     display: flex;
     margin-top: 1em;
-    border-top: 1px solid #f2f3f3;
+    border-bottom: 1px solid #f2f3f3;
 
     p {
         white-space: pre-wrap;
+        margin-top: 0;
     }
 
     blockquote {
         font-size: inherit;
     }
 }
+
+#comments-header {
+    border-bottom: 1px solid;
+}
+
 
 .comment-image-wrapper {
     box-sizing: border-box;
@@ -171,6 +155,7 @@
 
 .comment-body-wrapper {
     flex-grow: 1;
+    padding: 5px;
 }
 
 .comment-meta {

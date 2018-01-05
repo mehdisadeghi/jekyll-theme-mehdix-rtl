@@ -1,3 +1,15 @@
+header {
+    background: linear-gradient(18deg, $brand-color, lighten($brand-color, 30%));
+    background-size: 400% 400%;
+    animation: AnimationName 30s ease infinite;
+
+    @keyframes AnimationName {
+        0%{background-position:50% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
@@ -6,16 +18,6 @@
     @include media-query($on-laptop) {
         width: 89vw;
     }
-}
-
-header {
-    background: radial-gradient(black                    15%, transparent 16%) 0    0,
-                radial-gradient(black                    15%, transparent 16%) 8px  8px,
-                radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0    1px,
-                radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px  9px;
-    background-color: #282828;
-    background-size: 16px 16px;
-    color: white;
 }
 
 .site-title {
@@ -28,12 +30,64 @@ header {
     }
 }
 
-#motto {
-    vertical-align: calc(40%);
+.post-list {
+    list-style: none;
+
+    h2 {
+        font-weight: bold;
+        a {
+            //color: darken($header-color, 30%);
+        }
+    }
+
+    .post-list-item {
+        margin-bottom: $spacing-unit;
+    }
+
+    @include media-query($on-palm) {
+        padding-right: 0px;
+    }
 }
 
-.page-heading {
-    font-size: 20px;
+.post-list-mini {
+    list-style: none;
+    a {
+        color: $text-color;
+    }
+    .post-list-item {
+        display: flex;
+    }
+    .list-meta-col {
+        flex-basis: 120px;
+        flex-shrink: 0;
+    }
+    .list-line {
+        flex-grow: 1;
+    }
+}
+
+.meta {
+    font-size: $small-font-size;
+    color: lighten($text-color, 10%);
+}
+
+.list-meta-col {
+    @extend .meta;
+    width: 160px;
+    text-align: right;
+
+    @include media-query(400px) {
+        display: none;
+    }
+}
+
+.post-list-header {
+    font-size: 4em;
+}
+
+#motto {
+    color: white;
+    vertical-align: calc(40%);
 }
 
 .image-caption {
@@ -51,29 +105,6 @@ header {
     text-align: center;
 }
 
-.border {
-    border-style: dotted;
-    border-radius: 10px;
-    border-color: $brand-color;
-}
-
-.meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.list-meta-col {
-    @extend .meta;
-    display: inline-block;
-    width: 160px;
-    text-align: right;
-
-
-    @include media-query(400px) {
-        display: none;
-    }
-}
-
 .icon {
     > svg {
         display: inline-block;
@@ -87,8 +118,30 @@ header {
     }
 }
 
+.button {
+    border: none;
+    padding: 5px 32px;
+    background-color: lighten($brand-color, 25%);
+    border-radius: 2px;
+    color: white;
+}
+
 @include media-query($on-palm) {
     #motto {
         display: none;
+    }
+}
+
+.a-pagination {
+    font-feature-settings: "liga" 1,"lnum" 1;
+    text-align: center;
+    * {
+        line-height: 1.3;
+        font-weight: 500;
+        display: inline-block;
+        padding: .5em .75em;
+    }
+    .is-active {
+        font-size: x-large;
     }
 }

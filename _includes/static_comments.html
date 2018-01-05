@@ -5,7 +5,7 @@
   {% assign comments = site.data.comments[key] %}
   {% if comments %}
   <div id="comments">
-    <h4>کامنت‌دونی</h4>
+    <h4 id="comments-header">نظرات خوانندگان</h4>
     {% for comment in comments %}
       <article>
         <div class="comment-image-wrapper">
@@ -48,7 +48,7 @@
       <input id="website" type="url" name="website">
     </label>
     <div style="text-align:left">
-      <button type="submit">ارسال</button>
+      <button type="submit" class="button">ارسال</button>
     </div>
   </form>
 

@@ -2,7 +2,9 @@
 
   <div class="wrapper">
 
-    <img id="footer-gravatar" src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
+    {% if site.config.log %}
+      <img id="footer-gravatar" src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
+    {% endif %}
 
     <p id="footer-description">{{ site.long_description }}</p>
 
@@ -41,14 +43,14 @@
           <a href="mailto:{{ site.email }}">
             <span class="username social-media-text">تماس</span></a></li>
       {% endif %}
-      <li id="atom">
-        <span class="icon"><a href="https://validator.w3.org/feed/check.cgi?url={{ '' | absolute_url | append:'feed.xml'}}"><img src={{ "assets/img/valid-atom.png" | absolute_url }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
-      </li>
     </ul>
 
+  <div id="footer-extra">
+    {% include license.html %}
+    <a id="atom" href="https://validator.w3.org/feed/check.cgi?url={{ '' | absolute_url | append:'feed.xml'}}"><img src={{ "assets/img/valid-atom.png" | absolute_url }} alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a>
   </div>
 
-  {% include license.html %}
+  </div>
 
   <small id="build-time">Site generated on {{ site.time | date_to_rfc822 }}</small>
 

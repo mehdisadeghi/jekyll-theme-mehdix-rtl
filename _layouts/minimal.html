@@ -5,10 +5,10 @@ layout: default
 <ul class="post-list-mini">
   {% for post in site.posts %}
     <li class="post-list-item">
-      <span class="list-meta-col date">
-        {{ post.date | jdate: "%A %d %b %Y" | habify }}
+      <span class="list-meta-col">
+        {{ post.date | jdate: "%d %b %Y" | habify }}
       </span>
-      <span>
+      <span class="list-line">
         <a href="{{ post.url  | absolute_url }}">{{ post.title }}</a>
       </span>
     </li>

@@ -39,12 +39,13 @@ ul, ol, dl, figure,
 }
 
 h1, h2:not(.footer-heading), h3, h4, h5, h6 {
+    margin-top: 2.1rem;
     color: darken($header-color, 20%);
-    margin-bottom: unset;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    color: $header-color;
 }
 
 img {
@@ -59,10 +60,6 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
-}
-
-ul, ol {
-    margin-left: $spacing-unit;
 }
 
 ul {
@@ -81,7 +78,8 @@ li {
 }
 
 a {
-    color: darken($brand-color, 20%);
+    //color: darken($brand-color, 20%);
+    color: $header-color;
     text-decoration: none;
 }
 
@@ -94,10 +92,10 @@ blockquote {
     line-height: 1.45;
     color: $grey-color;
     margin: 0;
-    background-color: lighten($brand-color, 55%);
+    //background-color: lighten($brand-color, 55%);
 
     >  p {
-        border-right: 4px solid $brand-color;
+        border-right: 4px solid lighten($brand-color, 30%);
         padding: $spacing-unit / 2;
     }
 }

@@ -35,7 +35,7 @@ collections:
   projects:
     output: true
 
-#comment_system: disqus # or disqus. Default is no comments.
+comment_system: static # or disqus. Default is no comments.
 #disqus_shortname: mehdix
 #google_analytics_id: UA-57282325-1
 feedburner_id: mehdixir
@@ -46,5 +46,6 @@ twitter:
 github:
   username: mehdisadeghi
   repository: mehdix.ir
-logo: assets/img/me.png
+# Footer logo will disappear if not set.
+#logo: assets/img/me.png
 lang: fa_IR
