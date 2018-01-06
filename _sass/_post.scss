@@ -148,6 +148,7 @@
     box-sizing: border-box;
     max-width: 65px;
     margin: 0.5em;
+    overflow: hidden;
     img {
         clip-path: circle();
     }
