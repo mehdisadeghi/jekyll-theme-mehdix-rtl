@@ -2,25 +2,25 @@
 
   <div class="wrapper">
 
-    {% if site.config.log %}
+    {% if site.config.logo %}
       <img id="footer-gravatar" src="{{ 'assets/img/me.png' | absolute_url }}" alt="">
     {% endif %}
 
     <p id="footer-description">{{ site.long_description }}</p>
 
     <ul class="social-media-list">
-      {% if site.github_username %}
+      {% if site.github.username %}
       <li>
         <i class="fab fa-github"></i>
-        <a href="https://github.com/{{ site.github_username }}">
+        <a href="https://github.com/{{ site.github.username }}">
           <span class="username social-media-text">پروژه‌ها</span>
         </a>
       </li>
       {% endif %}
-      {% if site.twitter_username %}
+      {% if site.twitter.username %}
       <li>
         <i class="fab fa-twitter-square"></i>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
+        <a href="https://twitter.com/{{ site.twitter.username }}">
           <span class="username social-media-text">توئیت‌ها</span>
         </a>
       </li>
@@ -33,7 +33,7 @@
       </li>
       <li>
         <i class="fas fa-rss"></i>
-        <a href="http://feeds.feedburner.com/mehdixir">
+        <a href="http://feeds.feedburner.com/{{ site.feedburner_id }}">
         <span class="username social-media-text">خوراک</span></a>
       </li>
       {% endif %}

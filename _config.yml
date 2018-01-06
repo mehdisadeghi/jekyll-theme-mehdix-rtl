@@ -1,32 +1,25 @@
-# Site settings
 title: "روزنوشت‌های من"
 motto: "می‌نویسم پس هستم"
 author: Mehdi Sadeghi
 email: sadeghi@mehdix.org
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mehdix.ir" # the base hostname & protocol for your site
-keywords: کامپیوتر برنامه‌نویسی پایتون علم
+url: # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog
+keywords: کامپیوتر برنامه‌نویسی وب
 copyright: "Commons Attribution 4.0 International"
-robot: ""
-description: > # this means to ignore newlines until "baseurl:"
+robot: 
+description: > # this means to ignore newlines
   سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام.
-
 long_description: >
   بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم.
   اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است،
   بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
 
-twitter_username: mehdisadeghi
-github_username:  mehdisadeghi
-fullname: "مهدی صادقی"
-favicon: "assets/img/favicon.png"
-
+favicon: assets/img/favicon.png
 permalink: :title.html
-
 timezone: Europe/Berlin
 
 paginate: 3
-paginate_path: "/page:num/"
+paginate_path: /page:num/
 
 tag_page_layout: tag_page
 tag_page_dir: tag
@@ -38,9 +31,9 @@ collections:
 comment_system: static # or disqus. Default is no comments.
 #disqus_shortname: mehdix
 #google_analytics_id: UA-57282325-1
-feedburner_id: mehdixir
+feedburner_id: REPLACE_WITH_YOUR_FEEDBURNER_ID
 
-# SEO
+lang: fa_IR
 twitter:
   username: mehdisadeghii
 github:
@@ -48,4 +41,3 @@ github:
   repository: mehdix.ir
 # Footer logo will disappear if not set.
 #logo: assets/img/me.png
-lang: fa_IR
