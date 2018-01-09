@@ -22,7 +22,7 @@
     <title>{{ site.title }}</title>
   {%- endif -%}
 
-  <link rel="canonical" href="{{ site.baseurl, page.url | absolute_url }}" />
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | absolute_url }}" />
   <link rel="icon" href="{{ site.favicon | absolute_url}}" />
 
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
