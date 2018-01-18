@@ -67,7 +67,7 @@ ul {
 }
 
 ol {
-    list-style-type: persian;
+    list-style-type: persify;
 }
 
 li {
@@ -78,7 +78,6 @@ li {
 }
 
 a {
-    //color: darken($brand-color, 20%);
     color: $header-color;
     text-decoration: none;
 }
@@ -92,7 +91,6 @@ blockquote {
     line-height: 1.45;
     color: $grey-color;
     margin: 0;
-    //background-color: lighten($brand-color, 55%);
 
     >  p {
         border-right: 4px solid lighten($brand-color, 30%);
@@ -136,8 +134,15 @@ table {
 }
 
 @counter-style abjad-persian {
-    system: additive;
+    system: extends persian;
     range: 1 1000;
     additive-symbols: 1000 "\63A", 900 "\638", 800 "\636", 700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634", 200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639", 60 "\633", 50 "\646", 40 "\645", 30 "\644", 20 "\6AF", 10 "\649", 9 "\637", 8 "\62D", 7 "\698", 6 "\648", 5 "\FEEB", 4 "\62F", 3 "\686", 2 "\67E", 1 "\627\644\641";
+    suffix: ". ";
+    pad: 3 '-';
+}
+
+@counter-style persify {
+    system: alphabetic;
+    symbols: '۱' '۲' '۳' '۴' '۵' '۶' '۷' '۸' '۹';
     suffix: ". ";
 }

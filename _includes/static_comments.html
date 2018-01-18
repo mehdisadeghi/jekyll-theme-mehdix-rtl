@@ -4,8 +4,8 @@
   {% capture key %}{{ page.id | remove_first: "/" }}{% endcapture %}
   {% assign comments = site.data.comments[key] %}
   {% if comments %}
+  <h4 id="comments-header">نظرات خوانندگان</h4>
   <div id="comments">
-    <h4 id="comments-header">نظرات خوانندگان</h4>
     {% for comment in comments %}
       <article>
         <div class="comment-image-wrapper">
@@ -20,7 +20,7 @@
                 {{ comment.name }}
               {% endif %}
             </small>
-            <small class="meta"> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
+            <small> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
           </span>
           {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>
@@ -35,7 +35,7 @@
     <input name="page_uuid" style="display:none" value="{{page.uuid}}">
     <input name="page_date" style="display:none" value="{{page.date}}">
     <input name="page_title" style="display:none" value="{{page.title}}">
-    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با<a href="http://commonmark.org/help/">مارک‌داون</a> هم بنویسید.</small>
+    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/">مارک‌داون</a> هم بنویسید.</small>
       <textarea id="message" name="message" required alt="no!!"></textarea>
     </label>
     <label for="name">نام<sup class="required">*</sup>
