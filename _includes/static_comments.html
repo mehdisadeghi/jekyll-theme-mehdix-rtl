@@ -35,8 +35,9 @@
     <input name="page_uuid" style="display:none" value="{{page.uuid}}">
     <input name="page_date" style="display:none" value="{{page.date}}">
     <input name="page_title" style="display:none" value="{{page.title}}">
-    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/">مارک‌داون</a> هم بنویسید.</small>
-      <textarea id="message" name="message" required alt="no!!"></textarea>
+    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/" target="_">مارک‌داون</a> هم بنویسید.</small>
+      <textarea id="message" name="message" required alt="no!!" onkeyup="preview()"></textarea>
+      <div id="preview"></div>
     </label>
     <label for="name">نام<sup class="required">*</sup>
       <input id="name" type="text" name="name" required>
@@ -53,3 +54,12 @@
   </form>
 
 </section>
+<script src="{{ 'assets/js/showdown.min.js' | absolute_url }}" type="text/javascript">
+</script>
+<script type="text/javascript">
+  function preview(){
+    var converter = new showdown.Converter();
+    var markdown = document.getElementById("message").value;
+    document.getElementById("preview").innerHTML = converter.makeHtml(markdown);
+  }
+</script>

@@ -170,11 +170,30 @@
     }
 
     textarea {
-        height: 85px;
+        height: 10rem;
         resize: vertical;
     }
 
     sup.required {
         color: $brand-color;
+    }
+
+    #preview {
+        font-size: small;
+        color: darken($grey-color, 10%);
+        background-color: white;
+        margin-top: 1em;
+        h1, h2, h3, h4, h5, h6 {
+            color: darken($grey-color, 10%);
+            margin: initial;
+        }
+        p {
+            white-space: pre-wrap;
+            margin-top: 0;
+        }
+
+        blockquote {
+            font-size: inherit;
+        }
     }
 }
