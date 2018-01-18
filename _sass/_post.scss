@@ -44,6 +44,12 @@
     a {
         color: darken($brand-color, 10%)
     }
+
+    figure {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+    }
 }
 
 #related-posts {
@@ -89,8 +95,55 @@
     border-bottom-right-radius: 0;
 }
 
+#comments, #comments-form {
+    font-size: .9rem;
+    color: darken($grey-color, 30%);
+}
+
+#comments article {
+    display: flex;
+    margin-top: 1em;
+    border-bottom: 1px solid #f2f3f3;
+
+    p {
+        white-space: pre-wrap;
+        margin-top: 0;
+    }
+
+    blockquote {
+        font-size: inherit;
+    }
+}
+
+#comments-header {
+    color: darken($brand-color, 20%);
+    border-bottom: 1px solid lighten($brand-color, 50%);
+}
+
+.comment-image-wrapper {
+    box-sizing: border-box;
+    max-width: 65px;
+    margin: 0.5em;
+    overflow: hidden;
+    img {
+        clip-path: circle();
+    }
+}
+
+.comment-body-wrapper {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.comment-meta {
+    display: flex;
+    color: $grey-color;
+}
+
 #comment-form {
     background: lighten($brand-color, 55%);
+    color: darken($brand-color, 30%);
+    font-size: .9rem;
     padding: 15px;
 
     label {
@@ -103,6 +156,8 @@
         width: 100%;
         box-sizing: border-box;
         font-family: $base-font-family;
+        font-size: small;
+        color: darken($grey-color, 25%);
         border: 1px solid lighten($brand-color, 50%);
     }
 
@@ -122,43 +177,4 @@
     sup.required {
         color: $brand-color;
     }
-}
-
-#comments article {
-    display: flex;
-    margin-top: 1em;
-    border-bottom: 1px solid #f2f3f3;
-
-    p {
-        white-space: pre-wrap;
-        margin-top: 0;
-    }
-
-    blockquote {
-        font-size: inherit;
-    }
-}
-
-#comments-header {
-    border-bottom: 1px solid;
-}
-
-
-.comment-image-wrapper {
-    box-sizing: border-box;
-    max-width: 65px;
-    margin: 0.5em;
-    overflow: hidden;
-    img {
-        clip-path: circle();
-    }
-}
-
-.comment-body-wrapper {
-    flex-grow: 1;
-    padding: 5px;
-}
-
-.comment-meta {
-    display: flex;
 }
