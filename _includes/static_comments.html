@@ -15,7 +15,7 @@
           <span class="comment-meta">
             <small>
               {% if comment.website != '' %}
-                <a href={{comment.website}}>{{ comment.name }}</a>
+                <a href={{comment.website}} target="_">{{ comment.name }}</a>
               {% else %}
                 {{ comment.name }}
               {% endif %}
