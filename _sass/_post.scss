@@ -123,6 +123,7 @@
 .comment-image-wrapper {
     box-sizing: border-box;
     max-width: 65px;
+    min-width: 65px;
     margin: 0.5em;
     overflow: hidden;
     img {
