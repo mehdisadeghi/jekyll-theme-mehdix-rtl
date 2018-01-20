@@ -137,6 +137,10 @@
 .comment-meta {
     display: flex;
     color: $grey-color;
+
+    a {
+        color: $grey-color;
+    }
 }
 
 #comment-form {

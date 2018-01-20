@@ -7,7 +7,7 @@
   <h4 id="comments-header">نظرات خوانندگان</h4>
   <div id="comments">
     {% for comment in comments %}
-      <article>
+      <article id="{{ comment.date }}">
         <div class="comment-image-wrapper">
           <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" />
         </div>
@@ -20,7 +20,7 @@
                 {{ comment.name }}
               {% endif %}
             </small>
-            <small> &nbsp; {{ comment.date | jdate: "%d %b %Y" | habify }}</small>
+            <small> &nbsp; <a href="#{{ comment.date }}">{{ comment.date | jdate: "%d %b %Y" | habify }}</a></small>
           </span>
           {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>
