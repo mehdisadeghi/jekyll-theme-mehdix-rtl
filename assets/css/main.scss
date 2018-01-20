@@ -39,10 +39,10 @@ $header-color:     #14213d;
 /* Palett source:
 https://coolors.co/app/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 $brand-color:      #d90429;
-$anti-color:       #8d99ae;
+$anti-color:       white;
 $text-color:       #2b2d42;
-$background-color: #ffffff; /* original one was edf2f4 */
-$header-color:     #343434;//#343434;//#ef233c;
+$background-color: #ffffff;
+$header-color:     #343434;
 
 $grey-color:       gray;
 $grey-color-light: lighten($grey-color, 25%);

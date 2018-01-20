@@ -24,10 +24,7 @@ header {
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
-
-    &:visited {
-        color: white;
-    }
+    color: $anti-color;
 }
 
 .post-list {
@@ -35,9 +32,6 @@ header {
 
     h2 {
         font-weight: bold;
-        a {
-            //color: darken($header-color, 30%);
-        }
     }
 
     .post-list-item {
@@ -68,7 +62,7 @@ header {
 
 .meta {
     font-size: $small-font-size;
-    color: lighten($text-color, 10%);
+    color: $grey-color;
 }
 
 .list-meta-col {
@@ -86,7 +80,7 @@ header {
 }
 
 #motto {
-    color: white;
+    color: $anti-color;
     vertical-align: calc(40%);
 }
 
@@ -123,7 +117,7 @@ header {
     padding: 5px 32px;
     background-color: lighten($brand-color, 25%);
     border-radius: 2px;
-    color: white;
+    color: $anti-color;
 }
 
 @include media-query($on-palm) {
