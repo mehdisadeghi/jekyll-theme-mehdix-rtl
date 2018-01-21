@@ -7,7 +7,7 @@
   <h4 id="comments-header">نظرات خوانندگان</h4>
   <div id="comments">
     {% for comment in comments %}
-      <article id="{{ comment.date }}">
+      <article id="{{ comment.id }}">
         <div class="comment-image-wrapper">
           <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" />
         </div>
@@ -15,12 +15,14 @@
           <span class="comment-meta">
             <small>
               {% if comment.website != '' %}
-                <a href={{comment.website}} target="_">{{ comment.name }}</a>
+                <a href={{comment.website}} target="_"><span commenter>{{ comment.name }}</span></a>
               {% else %}
-                {{ comment.name }}
+                <span commenter>{{ comment.name }}</span>
               {% endif %}
             </small>
-            <small> &nbsp; <a href="#{{ comment.date }}">{{ comment.date | jdate: "%d %b %Y" | habify }}</a></small>
+            <small> &nbsp; <a href="#{{ comment.id }}">{{ comment.created_at | jdate: "%d %b %Y" | habify }}</a></small>
+            <small> &nbsp; <a href="#comment-form" onclick="replyTo('{{ comment.id }}')">پاسخ</a></small>
+            <span style="display:none" commentId>{{ comment.id }}</span>
           </span>
           {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
         </div>
@@ -32,8 +34,8 @@
   <form id="comment-form" name="comment" netlify-honeypot="bot-field" netlify>
     <input name="bot-field" style="display:none">
     <input name="page_id" style="display:none" value="{{page.id}}">
-    <input name="page_uuid" style="display:none" value="{{page.uuid}}">
-    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/" target="_">مارک‌داون</a> هم بنویسید.</small>
+    <input id="reply-to" name="reply-to" style="display:none">
+    <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/" target="_">مارک‌داون</a> هم بنویسید.</small><br><small id="replyToVisualClue"></small>
       <textarea id="message" name="message" required alt="no!!" onkeyup="preview()"></textarea>
       <div id="preview"></div>
     </label>
@@ -55,9 +57,15 @@
 <script src="{{ 'assets/js/showdown.min.js' | absolute_url }}" type="text/javascript">
 </script>
 <script type="text/javascript">
-  function preview(){
+  function preview() {
     var converter = new showdown.Converter();
     var markdown = document.getElementById("message").value;
     document.getElementById("preview").innerHTML = converter.makeHtml(markdown);
+  }
+
+  function replyTo(commentID) {
+    var comment = document.getElementById(commentID);
+    document.getElementById("reply-to").value = comment.querySelector("span[commentId]").innerText;
+    document.getElementById("replyToVisualClue").innerText = "[در جواب " + comment.querySelector("span[commenter]").innerText + "]";
   }
 </script>

@@ -37,3 +37,4 @@ build/
 _site/
 *.sublime-workspace
 vendor
+env.sh
