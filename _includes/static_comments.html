@@ -35,13 +35,13 @@
               <article class="sub-comment">
 
                 <div class="comment-image-wrapper">
-                  <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" />
+                  <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{cmt.email}}?s=200&d=robohash" />
                 </div>
                 <div class="comment-body-wrapper">
                   <span class="comment-meta">
                     <small>
                       {% if cmt.website != '' %}
-                        <a href={{comment.website}} target="_"><span commenter>{{ cmt.name }}</span></a>
+                        <a href={{cmt.website}} target="_"><span commenter>{{ cmt.name }}</span></a>
                       {% else %}
                         {{ cmt.name }}
                       {% endif %}
