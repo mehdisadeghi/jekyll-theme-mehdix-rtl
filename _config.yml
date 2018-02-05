@@ -41,3 +41,25 @@ github:
   repository: mehdix.ir
 # Footer logo will disappear if not set.
 #logo: assets/img/me.png
+
+exclude:
+- scripts
+- cache
+- .bundle
+- .sass-cache
+- reply-mail-hook
+- vendor
+- CONTRIBUTING.md
+- netlify.toml
+- wercker.yml
+- LICENSE
+- env.sh
+- screenshot.png
+- jekyll-theme-mehdix-rtl.sublime-project
+- jekyll-theme-mehdix-rtl.sublime-workspace
+- travis.yml
+- jekyll-theme-mehdix-rtl.gemspec
+- rebuild_comments.py
+- README.md
+- Gemfile
+- Gemfile.lock

@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
   
-  {%- include head.html -%}
+  <head>
+    {%- include_cached head.html -%}
+
+    {%- if page.tags -%}
+      <meta name="keywords" content='{{ page.tags | join: "," }}' />
+    {%- elsif page.url contains site.tag_page_dir -%}
+      <meta name="robots" content="noindex">
+    {%- else -%}
+      <meta name="keywords" content='{{ site.keywords | split: " " | join: "," }}' />
+    {%- endif -%}
+
+    {%- if page.title -%}
+      <title>{{ page.title }} - {{ site.title}}</title>
+    {%- else -%}
+      <title>{{ site.title }}</title>
+    {%- endif -%}
+
+    {% seo %}
+
+  </head>
 
   <body>
 
-    {%- include header.html -%}
+    {%- include_cached header.html -%}
 
     <main>
       <div class="wrapper">
@@ -13,9 +32,9 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {%- include_cached footer.html -%}
 
     <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-    {% if site.google_analytics_id %} {% include analyticstracking.html %} {% endif %}
+    {% if site.google_analytics_id %} {% include_cached analyticstracking.html %} {% endif %}
   </body>
 </html>

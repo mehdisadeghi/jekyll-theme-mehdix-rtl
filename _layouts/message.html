@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    {%- if page.title -%}
+      <title>{{ page.title }} - {{ site.title}}</title>
+    {%- else -%}
+      <title>{{ site.title }}</title>
+    {%- endif -%}
+  </head>
   <body>
     <main>
       <div class="wrapper">
