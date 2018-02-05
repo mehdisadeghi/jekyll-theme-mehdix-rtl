@@ -9,7 +9,7 @@ layout: default
         {{ post.date | jdate: "%d %b %Y" | habify }}
       </span>
       <span class="list-line">
-        <a href="{{ post.url  | absolute_url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </span>
     </li>
   {% endfor %}
