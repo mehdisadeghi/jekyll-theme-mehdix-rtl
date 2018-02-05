@@ -37,7 +37,12 @@ layout: default
     {% endfor %}
 
     <i class="fas fa-code"></i>
-    <a href="https://raw.githubusercontent.com/{{site.github.username}}/{{site.github.repository}}/master/{{page.path}}">سورس</a>
+    {% assign slash = site.source | slice: 0 %}
+    {% if slash == '/' %}
+    <a href="https://raw.githubusercontent.com/{{site.github.username}}/{{site.github.repository}}/master/{{ page.path }}">سورس</a>
+    {% else %}
+    <a href="https://raw.githubusercontent.com/{{site.github.username}}/{{site.github.repository}}/master/{{site.source}}/{{page.path}}">سورس</a>
+    {% endif %}
   </small>
 
   <nav class="pagination">
