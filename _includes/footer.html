@@ -33,7 +33,7 @@
       </li>
       <li>
         <i class="fas fa-rss"></i>
-        <a href="http://feeds.feedburner.com/{{ site.feedburner_id }}">
+        <a href="{{ post.url | absolute_url }}/feed.xml">
         <span class="username social-media-text">خوراک</span></a>
       </li>
       {% endif %}
