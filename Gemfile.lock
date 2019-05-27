@@ -1,7 +1,15 @@
+GIT
+  remote: https://github.com/mehdisadeghi/jekyll-tagging-lite
+  revision: 76fbc51bc644c660144ed9f6a1b0a854b23ee0f8
+  tag: v1.1.0
+  specs:
+    jekyll-tagging (1.1.0)
+      nuggets
+
 PATH
   remote: .
   specs:
-    jekyll-theme-mehdix-rtl (2.2.1)
+    jekyll-theme-mehdix-rtl (2.3.0)
       jekyll (~> 3.3)
       jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
@@ -58,8 +66,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-sitemap (1.3.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-tagging (1.1.0)
-      nuggets
     jekyll-tagging-lite (0.1.0)
       nuggets (~> 0)
     jekyll-tagging-related_posts (1.0.0)
@@ -111,6 +117,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-tagging!
   jekyll-tagging-lite
   jekyll-tagging-related_posts
   jekyll-theme-mehdix-rtl!

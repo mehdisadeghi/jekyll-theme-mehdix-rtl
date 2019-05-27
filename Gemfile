@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-jalali"
   gem "jekyll-hinduarabic"
+  gem "jekyll-tagging", :git => "https://github.com/mehdisadeghi/jekyll-tagging-lite", :tag => "v1.1.0"
   gem "jekyll-tagging-lite"
   gem "jekyll-tagging-related_posts"
   gem "liquid_reading_time"
