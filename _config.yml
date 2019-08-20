@@ -1,3 +1,4 @@
+# See https://jekyllrb.com/docs/configuration/default/
 title: "روزنوشت‌های من"
 motto: "می‌نویسم پس هستم"
 author: Mehdi Sadeghi
@@ -7,13 +8,18 @@ baseurl: # the subpath of your site, e.g. /blog
 keywords: کامپیوتر برنامه‌نویسی وب
 copyright: "Commons Attribution 4.0 International"
 robot: 
+
+# A one liner that describes your blog
 description: > # this means to ignore newlines
   سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام.
+
+# Tell more about your blog here
 long_description: >
   بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم.
   اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است،
   بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
 
+# The tiny icon of the website
 favicon: assets/img/favicon.png
 permalink: :title.html
 timezone: Europe/Berlin
@@ -28,17 +34,33 @@ collections:
   projects:
     output: true
 
-comment_system: static # or disqus. Default is no comments.
-#disqus_shortname: mehdix
-#google_analytics_id: UA-57282325-1
-feedburner_id: REPLACE_WITH_YOUR_FEEDBURNER_ID
+# Set to `static` or `disqus`. Default is no comments.
+comment_system: static
+
+# Used if the `comment_system` is set to `disqus`
+#disqus_shortname:
+
+# Setting this will add the analytics snipped.
+#google_analytics_id:
+
+# A unique identifier for your website's feed. If not set
+# the url of the website will be used instead. Using URL is
+# recommended if you own a domain name.
+#atom_feed_id: urn:uuid:1e7d9dd8-29e4-475d-adc5-17494fb80445
+
+# If you run a feedburner newsletter set this. Not recommended
+# since sooner or later Google will kill this service.
+#feedburner_id:
 
 lang: fa_IR
+
+# Footer stuff
 twitter:
   username: mehdisadeghii
 github:
   username: mehdisadeghi
   repository: jekyll-theme-mehdix-rtl
+
 # Footer logo will disappear if not set.
 #logo: assets/img/me.png
 
