@@ -31,12 +31,12 @@
         <a href="https://feedburner.google.com/fb/a/mailverify?uri={{ site.feedburner_id }}&amp;loc=en_US">
           <span class="username social-media-text">خبرنامه</span></a>
       </li>
+      {% endif %}
       <li>
         <i class="fas fa-rss"></i>
         <a href="{{ post.url | absolute_url }}/feed.xml">
         <span class="username social-media-text">خوراک</span></a>
       </li>
-      {% endif %}
       {% if site.email %}
         <li>
           <i class="fas fa-envelope-open"></i>
