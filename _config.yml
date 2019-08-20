@@ -3,7 +3,7 @@ title: "روزنوشت‌های من"
 motto: "می‌نویسم پس هستم"
 author: Mehdi Sadeghi
 email: sadeghi@mehdix.org
-url: # the base hostname & protocol for your site
+url: https://mystifying-benz-938b25.netlify.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog
 keywords: کامپیوتر برنامه‌نویسی وب
 copyright: "Commons Attribution 4.0 International"
