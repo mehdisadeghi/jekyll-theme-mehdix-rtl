@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    jekyll-theme-mehdix-rtl (2.3.0)
+    jekyll-theme-mehdix-rtl (2.5.0)
       jekyll (~> 3.3)
       jekyll-default-layout (~> 0.1)
       jekyll-hinduarabic (~> 0.1)
