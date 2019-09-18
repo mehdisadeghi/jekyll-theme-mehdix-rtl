@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-mehdix-rtl"
-  spec.version       = "2.5.0"
+  spec.version       = "2.5.1"
   spec.authors       = ["Mehdi Sadeghi"]
   spec.email         = ["mehdi@mehdix.org"]
 
@@ -10,20 +10,24 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/mehdisadeghi/jekyll-theme-mehdix-rtl"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
+  spec.metadata["plugin_type"] = "theme"
 
-  spec.add_runtime_dependency "jekyll", "~> 3.3"
+  spec.files = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(assets|_layouts|_includes|_sass|feed.*|LICENSE|README)}i)
+  end
+
+  spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-jalali", "~> 0.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.1"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-hinduarabic", "~> 0.1"
   spec.add_runtime_dependency "jekyll-default-layout", "~> 0.1"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.4"
-  spec.add_runtime_dependency "jekyll-tagging-lite", "~> 0.1"
+  spec.add_runtime_dependency "jekyll-tagging-lite", "~> 1.0"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0"
-  spec.add_runtime_dependency "jekyll-tagging-related_posts", "~> 1.0"
+  #spec.add_runtime_dependency "jekyll-tagging-related_posts", "~> 1.0"
   spec.add_runtime_dependency "liquid_reading_time", "~> 1.1"
 
-  spec.add_development_dependency "bundler", "~> 2"
-  spec.add_development_dependency "rake", "~> 12"
+  spec.add_development_dependency "bundler"
 end
