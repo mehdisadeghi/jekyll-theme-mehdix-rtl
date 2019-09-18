@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   #spec.add_runtime_dependency "jekyll-tagging-related_posts", "~> 1.0"
   spec.add_runtime_dependency "liquid_reading_time", "~> 1.1"
 
-  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "bundler", "~> 1.6", "< 3.0"
 end
