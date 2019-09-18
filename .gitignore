@@ -38,3 +38,4 @@ _site/
 *.sublime-workspace
 vendor
 env.sh
+.jekyll-cache

@@ -6,7 +6,6 @@ gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 
 
 group :jekyll_plugins do
-  gem "jekyll-default-layout"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-jalali"
