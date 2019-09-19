@@ -89,6 +89,7 @@ exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
+- renovate.json
 
 
 defaults:
