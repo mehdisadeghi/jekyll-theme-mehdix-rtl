@@ -11,7 +11,7 @@ PATH
   remote: .
   specs:
     jekyll-theme-mehdix-rtl (3.0.0)
-      jekyll (~> 4.0)
+      jekyll (>= 3.6, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-hinduarabic (~> 0.1)
       jekyll-include-cache (~> 0)
