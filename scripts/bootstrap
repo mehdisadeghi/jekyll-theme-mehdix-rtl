@@ -2,5 +2,6 @@
 
 set -e
 
+echo "Installing bundler..."
 gem install bundler
 bundle install
