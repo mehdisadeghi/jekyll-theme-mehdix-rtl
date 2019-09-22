@@ -10,7 +10,7 @@
   <div id="comments">
 
     {% for comment in comments %}
-      {% if comment.reply_to == nil %}
+      {% if comment.reply_to == nil or comment.reply_to == '' %}
       <div class="comment-chain">
         {% include comment.html comment=comment comments=comments%}
       </div>
