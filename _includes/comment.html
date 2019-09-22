@@ -1,0 +1,31 @@
+{% assign config=site.comments.static %}
+
+<article id="{{ include.comment.id }}">
+  {% if config.avatar.visible %}
+  <div class="comment-image-wrapper">
+    <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{include.comment.email}}?s=200&d=robohash" />
+  </div>
+  {% endif %}
+  <div class="comment-body-wrapper">
+    <span class="comment-meta">
+      <small>
+        {% if include.comment.website != '' %}
+          <a href={{include.comment.website}} target="_"><span commenter>{{ include.comment.name }}</span></a>
+        {% else %}
+          <span commenter>{{ include.comment.name }}</span>
+        {% endif %}
+      </small>
+      <small> &nbsp; <a href="#{{ include.comment.id }}">{{ include.comment.created_at | jdate: "%d %b %Y" | habify }}</a></small>
+      <span style="display:none" commentId>{{ include.comment.id }}</span>
+    </span>
+    {{ include.comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
+    <small class="comment-meta"> &nbsp; <a href="#comment-form" onclick="replyTo('{{ include.comment.id }}')">پاسخ</a></small>
+  </div>
+</article>
+<div class="reply">
+{% for cc in include.comments %}
+  {% if cc.reply_to == include.comment.id %}
+    {% include comment.html comment=cc %}
+  {% endif %}
+{% endfor %}
+</div>

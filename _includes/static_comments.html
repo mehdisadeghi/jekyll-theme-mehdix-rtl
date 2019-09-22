@@ -1,64 +1,22 @@
 {% capture newLine %}
 {% endcapture %}
+{% capture key %}{{ page.id | remove_first: "/" }}{% endcapture %}
+{% assign comments = site.data.comments[key] %}
+
 <section id="static-comments">
-  {% capture key %}{{ page.id | remove_first: "/" }}{% endcapture %}
-  {% assign comments = site.data.comments[key] %}
+
   {% if comments %}
   <h4 id="comments-header">دیدگاه‌ها</h4>
   <div id="comments">
+
     {% for comment in comments %}
-    <div class="comment-chain">
-      <article id="{{ comment.id }}">
-        <div class="comment-image-wrapper">
-          <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{comment.email}}?s=200&d=robohash" />
-        </div>
-        <div class="comment-body-wrapper">
-          <span class="comment-meta">
-            <small>
-              {% if comment.website != '' %}
-                <a href={{comment.website}} target="_"><span commenter>{{ comment.name }}</span></a>
-              {% else %}
-                <span commenter>{{ comment.name }}</span>
-              {% endif %}
-            </small>
-            <small> &nbsp; <a href="#{{ comment.id }}">{{ comment.created_at | jdate: "%d %b %Y" | habify }}</a></small>
-            <small> &nbsp; <a href="#comment-form" onclick="replyTo('{{ comment.id }}')">پاسخ</a></small>
-            <span style="display:none" commentId>{{ comment.id }}</span>
-          </span>
-          {{ comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
-        </div>
-      </article>
-
-        {% if comment.reply_to %}
-          {% for cmt in comments %}
-            {% if cmt.id == comment.reply_to %}
-              <article class="sub-comment">
-
-                <div class="comment-image-wrapper">
-                  <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{cmt.email}}?s=200&d=robohash" />
-                </div>
-                <div class="comment-body-wrapper">
-                  <span class="comment-meta">
-                    <small>
-                      {% if cmt.website != '' %}
-                        <a href={{cmt.website}} target="_"><span commenter>{{ cmt.name }}</span></a>
-                      {% else %}
-                        {{ cmt.name }}
-                      {% endif %}
-                    </small>
-                    <small> &nbsp; <a href="#{{ cmt.id }}">{{ cmt.created_at | jdate: "%d %b %Y" | habify }}</a></small>
-                  </span>
-                  {{ cmt.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
-                </div>
-
-              </article>
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-
-    </div>
+      {% if comment.reply_to == nil %}
+      <div class="comment-chain">
+        {% include comment.html comment=comment comments=comments%}
+      </div>
+      {% endif %}
     {% endfor%}
+
   </div>
   {% endif %}
 

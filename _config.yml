@@ -41,6 +41,13 @@ collections:
 # Set to `static` or `disqus`. Default is no comments.
 comment_system: static
 
+comments:
+  enabled: true
+  type: static
+  static:
+    avatar:
+      visible: true
+
 # Used if the `comment_system` is set to `disqus`
 #disqus_shortname:
 

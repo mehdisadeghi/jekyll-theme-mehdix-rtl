@@ -89,13 +89,11 @@ blockquote {
     font-style: italic;
     
     letter-spacing: -1px;
-    line-height: 1.45;
     color: $grey-color;
-    margin: 0;
 
     >  p {
         border-right: 4px solid lighten($brand-color, 30%);
-        padding: $spacing-unit / 2;
+        padding-right: $spacing-unit / 2
     }
 }
 
