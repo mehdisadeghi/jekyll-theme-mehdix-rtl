@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-mehdix-rtl"
-  spec.version       = "3.1.0"
+  spec.version       = "3.1.1"
   spec.authors       = ["Mehdi Sadeghi"]
   spec.email         = ["mehdi@mehdix.org"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.metadata["plugin_type"] = "theme"
 
   spec.files = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_layouts|_includes|_sass|feed.*|LICENSE|README)}i)
+    f.match(%r{^(assets|_config.yml|_layouts|_includes|_sass|feed.*|LICENSE|README)}i)
   end
 
   spec.add_runtime_dependency "jekyll", ">= 3.6", "< 5.0"
