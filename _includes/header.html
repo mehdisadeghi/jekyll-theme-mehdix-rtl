@@ -2,5 +2,8 @@
   <div class="wrapper">
     <a class="site-title" href="{{ '/' | absolute_url}}">{{ site.title }}</a>
     <small id="motto"> {{ site.motto }} </small>
+    {% if site.navbar %}
+    <nav><a href="{{ 'projects' | absolute_url}}">برنامه‌ها</a></nav>
+    {% endif %}
   </div>
 </header>

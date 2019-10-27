@@ -20,6 +20,15 @@ header {
     }
 }
 
+header nav {
+    display: inline;
+    margin-right: 1em;
+    a {
+        color: $anti-color;
+        font-size: small;
+    }
+}
+
 .site-title {
     font-size: 26px;
     line-height: 56px;
@@ -45,6 +54,7 @@ header {
 
 .post-list-mini {
     list-style: none;
+
     a {
         color: $text-color;
     }
@@ -57,6 +67,13 @@ header {
     }
     .list-line {
         flex-grow: 1;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @include media-query($on-palm) {
+        padding-right: 1em;
     }
 }
 
