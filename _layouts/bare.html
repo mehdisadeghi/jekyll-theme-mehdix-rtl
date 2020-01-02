@@ -16,15 +16,15 @@
       <title>{{ page.title }} - {{ site.title}}</title>
     {%- else -%}
       <title>{{ site.title }}</title>
-    {%- endif -%}
+    {% endif %}
 
     <link hreflang="fa" rel=alternate type=application/atom+xml title="{{ site.title }}" href="{{ post.url | absolute_url }}/feed.xml">
 
-    {%- if site.feedburner_id -%}
+    {% if site.feedburner_id %}
       <link hreflang="fa" rel=alternate type=application/atom+xml title="{{ site.title }}" href="https://feeds.feedburner.com/{{site.feedburner_id}}">
     {%- endif -%}
 
-    {% seo %}
+    {% seo title=false %}
 
   </head>
 
