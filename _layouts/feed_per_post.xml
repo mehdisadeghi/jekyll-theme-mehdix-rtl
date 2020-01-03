@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="{{'feed_per_post.xsl' | absolute_url}}" ?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
+
+  <!--link rel="alternate" type="text/html" href="{{ site.url }}" hreflang="fa" /-->
+  <link rel="self" type="application/atom+xml" href="{{ site.url }}/{{page.post_id}}.xml" />
+
+  <id>{{ page.post_id | absolute_url | xml_escape }}</id>
+  <title type="text" xml:lang="fa">{{ site.title | xml_escape}}</title>
+  <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <rights>{{ site.copyright | xml_escape}}</rights>
+
+  {% for comment in site.data.comments[page.post_id] %}
+  <entry>
+    <author>
+      <name>{{ comment.name | xml_escape}}</name>
+      <uri>{{ site.website | xml_escape }}</uri>
+    </author>
+    <id>{{ comment.id }}</id>
+    <title>{{ comment.title | xml_escape}}</title>
+    <updated>{{ comment.created_at | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+    <link rel="alternate" type="text/html" href="{{ page.url | absolute_url }}#{{ include.comment.id }}" />
+    
+    <content type="html">
+        <![CDATA[<div dir="rtl">{{ comment.message }}</div>]]>
+    </content>
+
+    <summary>{{ comment.message | strip_html | truncatewords: 100 }}</summary>
+  </entry>
+  {% endfor %}
+</feed>

@@ -97,6 +97,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - renovate.json
+- '*.gem'
 
 
 defaults:
