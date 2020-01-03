@@ -11,7 +11,6 @@ baseurl:
 
 keywords: کامپیوتر برنامه‌نویسی وب
 copyright: "Commons Attribution 4.0 International"
-robot: 
 
 # A one liner that describes your blog
 description: > # this means to ignore newlines
@@ -38,18 +37,16 @@ collections:
   projects:
     output: true
 
-# Set to `static` or `disqus`. Default is no comments.
-comment_system: static
-
+# Set to `static` or `disqus`.
 comments:
   enabled: true
   type: static
   static:
     avatar:
       visible: true
-
-# Used if the `comment_system` is set to `disqus`
-#disqus_shortname:
+  disqus:
+    # Used if the `comment_system` is set to `disqus`
+    shortname: ''
 
 # Setting this will add the analytics snipped.
 #google_analytics_id:
@@ -79,12 +76,9 @@ exclude:
 - scripts
 - cache
 - .bundle
-- .sass-cache
 - reply-mail-hook
-- vendor
 - CONTRIBUTING.md
 - netlify.toml
-- wercker.yml
 - LICENSE
 - env.sh
 - screenshot.png
@@ -94,12 +88,11 @@ exclude:
 - jekyll-theme-mehdix-rtl.gemspec
 - rebuild_comments.py
 - README.md
-- Gemfile
-- Gemfile.lock
 - renovate.json
 - '*.gem'
 
 
+# Set default post layout
 defaults:
 -
   scope:

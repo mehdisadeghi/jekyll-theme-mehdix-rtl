@@ -1,6 +1,6 @@
 ---
 ---
-var disqus_shortname = '{{site.disqus_shortname}}';
+var disqus_shortname = '{{site.comments.disqus.shortname}}';
 
 if (typeof ds_loaded == "undefined") {
     var ds_loaded = false; //To track loading only once on a page.
