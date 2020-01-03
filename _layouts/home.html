@@ -6,7 +6,7 @@ layout: default
   {% for post in paginator.posts %}
     <li class="post-list-item">
       <!--span class="meta date">{{ post.date | jdate: "%A %d %b %Y" | habify }}</span-->
-      <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       {{ post.content | strip_html | truncatewords: 35 }}
     </li>
   {% endfor %}
@@ -17,21 +17,21 @@ layout: default
   <nav class="a-pagination">
     {% if paginator.previous_page %}
 
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-forward"></i></a>
+      <a href="{{ paginator.previous_page_path | relative_url }}"><i class="fas fa-forward"></i></a>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
         <span class="is-active">{{ page | habify}}</span>
       {% elsif page == 1 %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page | habify }}</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}">{{ page | habify }}</a>
       {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | habify }}</a>
+        <a href="{{ site.paginate_path | replace: ':num', page | relative_url }}">{{ page | habify }}</a>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-backward"></i></a>
+      <a href="{{ paginator.next_page_path | relative_url }}"><i class="fas fa-backward"></i></a>
     {% endif %}
   </nav>
 

@@ -14,7 +14,7 @@
 
     {%- if page.title -%}
     <title>{{ page.title }} - {{ site.title}}</title>
-    <link hreflang="fa" rel=alternate type=application/atom+xml title="فید نظرات" href="{{ page.id | append:'.xml'}}">
+    <link hreflang="fa" rel=alternate type=application/atom+xml title="فید نظرات" href="{{ page.id | append:'.xml' | absolute_url }}">
     {%- else -%}
     <title>{{ site.title }}</title>
     {% endif %}
@@ -33,7 +33,7 @@
 
     {{- content -}}
 
-    <script src="{{ '/assets/js/main.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     {% if site.google_analytics_id %} {% include_cached analyticstracking.html %} {% endif %}
   </body>
 </html>

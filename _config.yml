@@ -7,7 +7,7 @@ email: sadeghi@mehdix.org
 # the base hostname & protocol for your site without trailing slash
 url: https://mystifying-benz-938b25.netlify.com
 # the subpath of your site, e.g. /blog
-baseurl: 
+baseurl: /user1
 
 keywords: کامپیوتر برنامه‌نویسی وب
 copyright: "Commons Attribution 4.0 International"

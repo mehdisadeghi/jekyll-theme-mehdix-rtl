@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="{{ site.description | strip_newlines}}" />
 
-<link rel="canonical" href="{{ page.url | prepend: site.baseurl | absolute_url }}" />
-<link rel="icon" href="{{ site.favicon | absolute_url}}" />
-<link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
-<link rel="stylesheet" href="{{ 'assets/fonts/fontawesomev5.0.2.css' | absolute_url }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<link rel="icon" href="{{ site.favicon | absolute_url }}" />
+<link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ 'assets/fonts/fontawesomev5.0.2.css' | relative_url }}" />

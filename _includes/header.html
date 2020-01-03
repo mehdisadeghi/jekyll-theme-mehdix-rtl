@@ -1,9 +1,9 @@
 <header>
   <div class="wrapper">
-    <a class="site-title" href="{{ '/' | absolute_url}}">{{ site.title }}</a>
+    <a class="site-title" href="{{ '/' | relative_url}}">{{ site.title }}</a>
     <small id="motto"> {{ site.motto }} </small>
     {% if site.navbar %}
-    <nav><a href="{{ 'projects' | absolute_url}}">برنامه‌ها</a></nav>
+    <nav><a href="{{ 'projects' | relative_url }}">برنامه‌ها</a></nav>
     {% endif %}
   </div>
 </header>
