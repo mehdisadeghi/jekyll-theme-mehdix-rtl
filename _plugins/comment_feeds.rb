@@ -18,7 +18,8 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'feed_per_post.xml')
-      self.data['post_id'] = post.id.sub! '/', ''
+      first, self.data['post_key'] = post.id.split '/'
+      self.data['post'] = post
 
     end
   end

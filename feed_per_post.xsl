@@ -12,7 +12,7 @@
       <body style="margin:auto;display:grid;width:540px;font-family:Arial;background-color:#EEEEEE;grid-gap:19px">
         <h1><strong>دیدگاه‌های خوانندگان</strong></h1>
         <xsl:apply-templates select="atom:feed/atom:entry"/>
-        <small>*فید حاوی متن کامل دیدگاه‌هاست.</small>
+        <small>*اگه اینجا رو پیدا کردی واقعا باید بهت دست‌مریزاد گفت. تو عالی هستی!</small>
       </body>
     </html>
   </xsl:template>
