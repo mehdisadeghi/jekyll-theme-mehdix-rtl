@@ -60,9 +60,9 @@ layout: default
   </nav>
 
   <section>
-    {% if site.comment_system == 'static' %}
+    {% if site.comments.type == 'static' %}
       {% include static_comments.html %}
-    {% elsif site.comment_system == 'disqus' %}
+    {% elsif site.comments.type == 'disqus' %}
       {% include disqus.html %}
     {% endif %}
   </section>
