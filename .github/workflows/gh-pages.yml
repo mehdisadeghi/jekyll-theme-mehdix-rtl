@@ -11,6 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: Patch baseurl
+      run: |
+        echo "baseurl: /jekyll-theme-mehdix-rtl" >> _config.yml
+
     - name: Build
       uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
       env: 
