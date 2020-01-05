@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xml" href="https://mystifying-benz-938b25.netlify.com/feed_per_post.xsl" ?>
+<?xml-stylesheet type="text/xml" href="https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/feed_per_post.xsl" ?>
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
   <!--link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com" hreflang="fa" /-->
   <link rel="self" type="application/atom+xml" href="https://mystifying-benz-938b25.netlify.com//dummy.xml" />
 
-  <id>https://mystifying-benz-938b25.netlify.com/dummy</id>
+  <id>https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/dummy</id>
   <title type="text" xml:lang="fa">عنوانی بس طولانی و به غایت مشکل‌ساز که مانده‌ایم با آن چه کنیم!</title>
   <updated></updated>
   <rights>Commons Attribution 4.0 International</rights>
@@ -20,7 +20,7 @@
     <id>5a646c77e0fafd2610de3e6d</id>
     <title></title>
     <updated>2018-01-21T10:33:27Z</updated>
-    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/github/workspace/_site/dummy.xml#" />
+    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/github/workspace/_site/dummy.xml#" />
     
     <content type="html">
         <![CDATA[<div dir="rtl">> اکنون بهتر از هرگز است.
@@ -41,7 +41,7 @@
     <id>5a647dd735c51502d6559824</id>
     <title></title>
     <updated>2018-01-21T11:47:35Z</updated>
-    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/github/workspace/_site/dummy.xml#" />
+    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/github/workspace/_site/dummy.xml#" />
     
     <content type="html">
         <![CDATA[<div dir="rtl">> این جملات لیاقت به تن کردن قلمی بهتر از این را دارند.
@@ -62,7 +62,7 @@
     <id>5a648881a8498f79ba9a27d9</id>
     <title></title>
     <updated>2018-01-21T12:33:05Z</updated>
-    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/github/workspace/_site/dummy.xml#" />
+    <link rel="alternate" type="text/html" href="https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/github/workspace/_site/dummy.xml#" />
     
     <content type="html">
         <![CDATA[<div dir="rtl">این دیدگاه پاسخی است به پاسخ خودم.</div>]]>
