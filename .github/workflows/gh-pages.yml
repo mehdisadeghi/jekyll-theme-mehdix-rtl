@@ -14,6 +14,7 @@ jobs:
     - name: Patch baseurl
       run: |
         echo "baseurl: /jekyll-theme-mehdix-rtl" >> _config.yml
+        echo "url: http://mehdisadeghi.github.io" >> _config.yml
 
     - name: Build
       uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
