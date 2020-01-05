@@ -1,4 +1,0 @@
-[build]
-  base    = ""
-  publish = "_site"
-  command = "sh scripts/bootstrap && sh scripts/build"
