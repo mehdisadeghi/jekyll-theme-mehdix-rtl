@@ -1,1 +1,1 @@
-Sitemap: https://mystifying-benz-938b25.netlify.com/jekyll-theme-mehdix-rtl/sitemap.xml
+Sitemap: http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/sitemap.xml
