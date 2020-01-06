@@ -14,7 +14,9 @@ jobs:
     - name: Patch Jekyll Config
       run: |
         echo "baseurl: /jekyll-theme-mehdix-rtl" >> _config.yml
-        echo "url: http://${{ secrets.GITHUB_ACTOR }}.github.io" >> _config.yml
+        echo "url: http://$GITHUB_ACTOR.github.io" >> _config.yml
+      env:
+         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
     - name: Build
       uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
