@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xml" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/feed.xsl" ?>
+<?xml-stylesheet type="text/xml" href="/jekyll-theme-mehdix-rtl/feed.xsl" ?>
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
@@ -8,7 +8,7 @@
 
   <id>http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/</id>
   <title type="text" xml:lang="fa">روزنوشت‌های من</title>
-  <updated>2020-01-06T10:16:46Z</updated>
+  <updated>2020-01-06T10:26:37Z</updated>
   <rights>Commons Attribution 4.0 International</rights>
 
   <author>
