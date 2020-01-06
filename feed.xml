@@ -5,8 +5,8 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
-  <link rel="alternate" type="text/html" href="{{ site.url }}" hreflang="fa" />
-  <link rel="self" type="application/atom+xml" href="{{ site.url }}/feed.xml" />
+	<link rel="alternate" type="text/html" href="{{ '/' | absolute_url  }}" hreflang="fa" />
+	<link rel="self" type="application/atom+xml" href="{{ 'feed.xml' | absolute_url }}" />
 
   <id>{% if site.atom_feed_id %}{{ site.atom_feed_id }}{% else %}{{ '/' | absolute_url | xml_escape }}{% endif %}</id>
   <title type="text" xml:lang="fa">{{ site.title | xml_escape}}</title>
