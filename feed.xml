@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xml" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/feed.xsl" ?>
+<?xml-stylesheet type="text/xml" href="http://.github.io/jekyll-theme-mehdix-rtl/feed.xsl" ?>
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
-  <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io" hreflang="fa" />
-  <link rel="self" type="application/atom+xml" href="http://mehdisadeghi.github.io/feed.xml" />
+	<link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/" hreflang="fa" />
+	<link rel="self" type="application/atom+xml" href="http://.github.io/jekyll-theme-mehdix-rtl/feed.xml" />
 
-  <id>http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/</id>
+  <id>http://.github.io/jekyll-theme-mehdix-rtl/</id>
   <title type="text" xml:lang="fa">روزنوشت‌های من</title>
-  <updated>2020-01-05T22:48:57Z</updated>
+  <updated>2020-01-06T10:06:03Z</updated>
   <rights>Commons Attribution 4.0 International</rights>
 
   <author>
     <name>Mehdi Sadeghi</name>
     <email>sadeghi@mehdix.org</email>
-    <uri>http://mehdisadeghi.github.io</uri>
+    <uri>http://.github.io</uri>
   </author>
 
   
   <entry>
     
-    <id>http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/dummy.html</id>
+    <id>http://.github.io/jekyll-theme-mehdix-rtl/dummy.html</id>
     
     <title>عنوانی بس طولانی و به غایت مشکل‌ساز که مانده‌ایم با آن چه کنیم!</title>
     <updated>2018-01-07T19:54:11Z</updated>
-    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/dummy.html"/>
+    <link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/dummy.html"/>
     
     <content type="html">
         <![CDATA[<div dir="rtl"><p>پیش از آنکه شروع به نوشتین کنیم شایسته است بیافزایم که این متن نیز به غایت مشکل‌ساز است. شاید که با عنوان می‌شد به طریقی کنار آمد ولی با متن که هدف غایی خواننده و نویسینده و محل ملاقات آن دو است چه کنیم؟‌ آیا با جفنگ گفتن بیشتر این مشکل حل خواهد شد؟ مرا که گمان این نمی‌رود.</p>
@@ -100,7 +100,7 @@
     
     <title>فعالسازی HTTPS به کمک Netlify</title>
     <updated>2017-12-16T00:00:00Z</updated>
-    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/netlify.html"/>
+    <link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/netlify.html"/>
     <category term="امنیت"/><category term="https"/><category term="cdn"/><category term="ssl"/>
     <content type="html">
         <![CDATA[<div dir="rtl"><p>از امروز این وبسایت علاوه بر HTTP از طریق <a href="https://mehdix.ir">HTTPS</a> هم در دسترس است. در این مطلب شرح می‌دهم چطور اینکار را انجام دادم.</p>
@@ -141,7 +141,7 @@
     
     <title>قانون اساسی به فرم YAML</title>
     <updated>2016-08-07T00:00:00Z</updated>
-    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/iran-constitution.html"/>
+    <link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/iran-constitution.html"/>
     <category term="قانون"/><category term="متادیتا"/><category term="yaml"/><category term="ایران"/>
     <content type="html">
         <![CDATA[<div dir="rtl"><h1 id="بیگ-عنوان">بیگ عنوان</h1>
@@ -209,7 +209,7 @@
     
     <title>python -m this</title>
     <updated>2016-05-17T00:00:00Z</updated>
-    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/python-zen.html"/>
+    <link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/python-zen.html"/>
     <category term="ذن"/><category term="zen"/>
     <content type="html">
         <![CDATA[<div dir="rtl"><p>کوان‌های ذن پایتون.</p>
@@ -275,7 +275,7 @@
     
     <title>پیشگفتار</title>
     <updated>2014-11-02T14:24:00Z</updated>
-    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/publishing-with-jekyll.html"/>
+    <link rel="alternate" type="text/html" href="http://.github.io/jekyll-theme-mehdix-rtl/publishing-with-jekyll.html"/>
     <category term="وبلاگ"/><category term="جکیل"/><category term="هکر"/>
     <content type="html">
         <![CDATA[<div dir="rtl"><p>مدتها قبل وبلاگ‌هایی<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> با وردپرس داشتم که متروکه شدند. آنها روی وردپرس قرار داشتند و امکان شخصی سازی در اختیارم نمی‌گذاشتند. اخیرا دوباره علاقه‌مند شدم که یک وبلاگ شخصی داشته باشم اما نه روی وردپرس بلکه روی یک دامنه شخصی. این کار از منظر مارکتینگ شخصی برای من به عنوان یک برنامه‌نویس و یک هکر تازه‌کار مهم است. بنابراین دامنه جدیدی ثبت کردم و وبلاگی مبتنی بر وردپرس راه‌اندازی کردم. از جایی که قصد دارم گاهی مطالبی به انگلیسی یا آلمانی منتشر کنم وردپرس را به کمک پلاگینی به نام <a href="https://wordpress.org/plugins/polylang/">polylang</a> به وبلاگی چندزبانه تبدیل کردم. اما به زودی دریافتم که با اینکار «سادگی» را که برایم بسیار مهم است از دست می‌دهم و تصمیم گرفتم که این روش را کنار بگذارم. در جستجوی یک روش ساده‌ و هکرپسند به جکیل رسیدم. وبلاگی که در پیش‌رو دارید با جِکیل ساخته شده است.</p>

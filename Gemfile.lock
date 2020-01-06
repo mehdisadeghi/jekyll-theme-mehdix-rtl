@@ -84,7 +84,7 @@ GEM
       ruby-nuggets (= 0.9.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.2)
+    public_suffix (4.0.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
