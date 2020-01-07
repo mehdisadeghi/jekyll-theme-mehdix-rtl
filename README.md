@@ -3,6 +3,67 @@
 
 ![](screenshot.png)
 
+See English version below.
+
+<div dir="rtl" lang="fa">
+این ریپازیتوری حاوی قالبی جکیلی است که برای [وبسایت شخصی](https://mehdix.ir) خودم ساخته‌ام. انگیزه ایجاد آن هم کمک به افرادی است که سعی دارند سایتی شبیه آن برای خودشان بسازند و پاسخ به سوالاتی است که طی سالهای گذشته در مورد نحوه ساخت آن پیوسته دریافت کرده‌ام. در ادامه روش‌های استفاده و سوالات رایج را می‌آورم. در راهنمای انگلیسی هم نحوه نصب را نوشته‌ام.
+
+## نحوه استفاده
+این ریپازیتوری را به دو طریق می‌توانید استفاده کنید. روش اول اینست که مستقیما این ریپازیتوری را فورک کنید. روش دوم استفاده از [جم روبی](https://rubygems.org/gems/jekyll-theme-mehdix-rtl) این قالب است. هر دو را شرح می‌دهم.
+
+### استفاده به روش فورک
+فورک کنید و بعد کلون کنید و اسم و رسم سایت و محتوا را تغییر بدهید و به عنوان یک سایت جدید استفاده کنید. در این روش باید بعد از فورک در ریپازیتوری جدید داخل اکانت خودتان GitHub Pages را فعال کنید و برنج _gp-pages_ را بعنوان برنچ حاوی سایت استاتیک انتخاب کنید (جایی که خروجی بیلد جکیل قرار دارد).
+
+<p align="center">
+<img src="assets/pimg/ghpages1.png">
+</p>
+
+بدون هیچ تغییر دیگری همینکه تغییرات خودتان را پوش کنید سایت بیلد می‌شود اما در _gp-pages_ کپی نمی‌شود. علت هم نقص در گیت‌هاب است چون امکان بیلد را ماکروسافت اخیرا بعد از خریداری گیت‌هاب اضافه کرده است و هنوز در حال تکمیل است. راه حلی که پیدا کردم استفاده از یک کلید جداگانه برای بیلد است. برای اینکار باید یک کلید روی کامپیوترتان بسازید و به تنظیمات ریپازیتوری گیت‌هابتان اضافه کنید. اول کلید را بسازید:
+
+<div dir="ltr">
+    $ ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
+</div>
+
+خروجی این دستور دو فایل `gh-pages` و `gh-pages.pub` است که اولی کلید خصوصی و دومی کلید عمومی است. بروید به _Settings/Deploy Keys_ و یک کلید جدید بنام `ACTIONS_DEPLOY_KEY` بسازید و محتوای فایل کلید عمومی را آنجا کپی کنید. اسم همین باشد چون در تنظیمات بیلد بکار رفته است. چک‌باکس _Allow write access_ را هم تیک بزنید.
+
+<p align="center">
+<img src="assets/pimg/ghpages2.png">
+</p>
+
+همینکار را هم برای کلید خصوصی در بخش _Secrets_ انجام بدهید و تمام.
+
+<p align="center">
+<img src="assets/pimg/ghpages3.png">
+</p>
+
+حسن این روش اینست که ساده و سرراست است. لازم نیست با پیچیدگی‌های جکیل و تنظیمات قالب را بدانید. عیبش هم اینست که تغییرات جدید در تم را دریافت نمی‌کند که به نظرم اهمیت چندانی ندارد.
+
+### استفاده از طریق روبی جم
+ساختار جکیل بکار رفته در این ریپازیتوری به صورت یک [جم روبی](https://rubygems.org/gems/jekyll-theme-mehdix-rtl) در دسترسی است. در اینصورت باید یک وبسایت جکیل ساخت و در فایل `_config.yml` قالب را تغییر داد. این کاری است که در ریپازیتوری ‏[وبسایت خودم](https://github.com/mehdisadeghi/mehdix.ir/blob/master/_config.yml#L26) انجام داده‌ام. این روش را در شرح انگلیسی نوشته‌ام. 
+
+حسن این روش اینست که می‌توان نسخه‌های جدیدتر تم را به صورت نصب نسخه‌های جدیتر جم روبی دریافت کرد. عیبش آنست که قالب جکیل به صورت تم محدود است. مثلا جکیل صفحه ۴۰۴ را از داخل جم قالب نمی‌خواند، همینطور برخی فایل‌ها مانند فایل‌های تولید فید را. در ضمن باید تمام تنظیمات بیلد سایت را هم جداگانه انجام داد.
+
+## برخی سوالات رایج
+
+1. تقویم شمسی روی گیت‌هاب کار نمی‌کنه. پلاگین‌ها کار نمی‌کنند!
+
+بیلدر پیش‌فرض گیت‌هاب نمی‌تواند این سایت را بیلد کند چون پلاگین‌ها را ندارد. از ‬[تنظیمات بیلد](https://github.com/mehdisadeghi/jekyll-theme-mehdix-rtl/blob/master/.github/workflows/gh-pages.yml) همین وبسایت استفاده کنید که بالاتر شرح دادم.
+
+2. وبسایت اصلا روی گیت‌هاب کار نمی‌کند! گیت‌هاب برنج gh-pages را اصلا برای وبسایت بکار نمی‌برد!
+
+اگر اسم ریپازیتوری همان یوزرنیم شما باشد گیت‌هاب سایت را از برنج مستر خواهد ساخت. گیت‌هاب به این سایت‌ها User page می‌گوید و در غیر اینصورت Project page. روش‌هایی که برای بیلد توضیح دادم فقط برای Project page کار می‌کند. یعنی یوزرنیم و نام ریپازیتوری سایت نباید یکسان باشد. برای یوزرپیج احتمالا باید سورس را در یک برنج غیر از مستر ذخیره کنید و خروجی بیلد وبسایت را پوش کنید در برنج مستر. امتحان نکرده‌ام.
+
+3. کامنت‌های استاتیک کار نمی‌کند!
+
+روی گیت‌هاب اصلا نمی‌شود. من روی نتلیفای این کار را انجام داده‌ام و در [مقاله‌ای](https://mehdix.ir/static-comments.html) روش کار را شرح داده‌ام.
+
+4. چگونه شکل و شمایل صورتی سایت را عوض کنم؟
+
+متغیرهای CSS داخل فایل [`main.scss`](https://github.com/mehdisadeghi/jekyll-theme-mehdix-rtl/blob/master/assets/css/main.scss) را عوض کن.
+
+</div>
+
+## English Guide
 This is the jekyll theme used for my personal Persian [website](http://mehdix.ir). Persian aka Farsi is written right-to-left, however some people use Roman script to write Persian language in messaging applications and social networks.
 
 During the last few years people have reached out to me asking how to setup a persian Jekyll website with Jalali calendar support. Since Jekyll now supports themes, I created this theme based on my website to help others to bootstrap their own websites.
@@ -20,7 +81,7 @@ Take the following steps to make your own website based on this theme. First of 
 Then add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "jekyll-theme-mehdix-rtl"
+gem "jekyll-theme-mehdix-rtl", "~> 3.0"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
@@ -31,25 +92,13 @@ theme: jekyll-theme-mehdix-rtl
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
     $ gem install jekyll-theme-mehdix-rtl
 
 You can override theme style by creating matching files with the same structure inside your Jekyll source tree. See Jekyll [Themes docs](https://jekyllrb.com/docs/themes/) for more information on that.
-
-### Enable the Plugins
-This theme uses some jekyll plugins. Enable them by adding them to the `plugins` section in the config file:
-
-```yaml
-plugins:
-  - jekyll-jalali
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-hinduarabic
-  - jekyll-seo-tag
-```
 
 ## Further customization
 
@@ -91,18 +140,17 @@ For the time being I am using Netlify to handle custom comment forms on each pos
 comments using the [`netlify_comments.py`](./netlify_comments.py) script.
 
 ### Forcing RTL code blocks
-If you put code blocks and they appear incorrectly, you can use _Markright gem. First add it to your Gemfile:
+If you put code blocks and they appear incorrectly, you can use _Markright_ gem. First add it to your Gemfile:
 
 ```ruby
 gem "jekyll-markright"
 ```
 
-And change your __config.yml_ respectively:
+And change your _config.yml_ respectively:
 
 ```yaml
 markdown: Markright
 ```
-
 ### Footer
 If any of the following ids is present in the config a corresponding item will be added to the footer:
 
