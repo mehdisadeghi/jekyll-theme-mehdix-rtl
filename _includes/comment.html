@@ -1,11 +1,13 @@
 {% assign config=site.comments.static %}
 
 <article id="{{ include.comment.id }}">
+
   {% if config.avatar.visible %}
   <div class="comment-image-wrapper">
     <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{include.comment.email}}?s=200&d=robohash" />
   </div>
   {% endif %}
+
   <div class="comment-body-wrapper">
     <span class="comment-meta">
       <small>
@@ -21,11 +23,13 @@
     {{ include.comment.message | replace: "<p>", '' | replace: "</p>", newLine | replace: "<br>", newLine | strip_html | markdownify }}
     <small class="comment-meta"> &nbsp; <a href="#comment-form" onclick="replyTo('{{ include.comment.id }}')">پاسخ</a></small>
   </div>
+
 </article>
+
 <div class="reply">
 {% for cc in include.comments %}
   {% if cc.reply_to == include.comment.id %}
-    {% include comment.html comment=cc %}
+    {% include comment.html comment=cc comments=include.comments%}
   {% endif %}
 {% endfor %}
 </div>
