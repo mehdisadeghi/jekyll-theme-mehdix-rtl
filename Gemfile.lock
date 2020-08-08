@@ -83,7 +83,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.7)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     nuggets (0.9.9)
       ruby-nuggets (= 0.9.9)
