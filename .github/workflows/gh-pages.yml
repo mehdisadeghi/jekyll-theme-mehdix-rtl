@@ -18,6 +18,9 @@ jobs:
       env:
          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
+    - name: Remove Gemfile.lock
+      run: rm -rf Gemfile.lock
+
     # - name: Build
     #   uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
     #   env:
