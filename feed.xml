@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="/jekyll-theme-mehdix-rtl/feed.xsl" ?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
+
+	<link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/" hreflang="fa" />
+	<link rel="self" type="application/atom+xml" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/feed.xml" />
+
+  <id>http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/</id>
+  <title type="text" xml:lang="fa">روزنوشت‌های من</title>
+  <updated>2020-11-04T00:20:39Z</updated>
+  <rights>Commons Attribution 4.0 International</rights>
+
+  <author>
+    <name>Mehdi Sadeghi</name>
+    <email>sadeghi@mehdix.org</email>
+    <uri>http://mehdisadeghi.github.io</uri>
+  </author>
+
+  
+  <entry>
+    
+    <id>http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/dummy.html</id>
+    
+    <title>عنوانی بس طولانی و به غایت مشکل‌ساز که مانده‌ایم با آن چه کنیم!</title>
+    <updated>2018-01-07T19:54:11Z</updated>
+    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/dummy.html"/>
+    
+    <content type="html">
+        <![CDATA[<div dir="rtl"><p>پیش از آنکه شروع به نوشتین کنیم شایسته است بیافزایم که این متن نیز به غایت مشکل‌ساز است. شاید که با عنوان می‌شد به طریقی کنار آمد ولی با متن که هدف غایی خواننده و نویسینده و محل ملاقات آن دو است چه کنیم؟‌ آیا با جفنگ گفتن بیشتر این مشکل حل خواهد شد؟ مرا که گمان این نمی‌رود.</p>
+
+<h1 id="برسیم-به-کار-نوشتن">برسیم به کار نوشتن</h1>
+
+<p><img src="/assets/uploads/dirtybike.jpg" alt="" /></p>
+
+<p>کوان‌های ذن پایتون.</p>
+
+<blockquote>
+  <p>استاد برنامه‌نویس بدین گونه به سخن درآمد: برنامه‌ای که خوب نوشته شده بهشت خودش است و برنامه‌ای که بد نوشته شده جهنم خودش است.</p>
+</blockquote>
+
+<h2 id="و-به-پیش">و به پیش!</h2>
+
+<p>تائوی برنامه‌نویسی، نوشته‌ جفری جیمز، ترجمه آیدین غریب‌نواز</p>
+
+<h3 id="و-پیش">و پیش</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
+
+<span class="n">The</span> <span class="n">Zen</span> <span class="n">of</span> <span class="n">Python</span><span class="p">,</span> <span class="n">by</span> <span class="n">Tim</span> <span class="n">Peters</span>
+
+<span class="n">Beautiful</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">ugly</span><span class="p">.</span>
+<span class="n">Explicit</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">implicit</span><span class="p">.</span>
+<span class="n">Simple</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="nb">complex</span><span class="p">.</span>
+<span class="n">Complex</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">complicated</span><span class="p">.</span>
+<span class="n">Flat</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">nested</span><span class="p">.</span>
+<span class="n">Sparse</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">dense</span><span class="p">.</span>
+<span class="n">Readability</span> <span class="n">counts</span><span class="p">.</span>
+<span class="n">Special</span> <span class="n">cases</span> <span class="n">aren</span><span class="s">'t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you'</span><span class="n">re</span> <span class="n">Dutch</span><span class="p">.</span>
+<span class="n">Now</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">never</span><span class="p">.</span>
+<span class="n">Although</span> <span class="n">never</span> <span class="ow">is</span> <span class="n">often</span> <span class="n">better</span> <span class="n">than</span> <span class="o">*</span><span class="n">right</span><span class="o">*</span> <span class="n">now</span><span class="p">.</span>
+<span class="n">If</span> <span class="n">the</span> <span class="n">implementation</span> <span class="ow">is</span> <span class="n">hard</span> <span class="n">to</span> <span class="n">explain</span><span class="p">,</span> <span class="n">it</span><span class="s">'s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let'</span><span class="n">s</span> <span class="n">do</span> <span class="n">more</span> <span class="n">of</span> <span class="n">those</span><span class="err">!</span>
+</code></pre></div></div>
+
+<p>زیبا بهتر از زشت است.<br />
+صریح بهتر از ضمنی است.<br />
+ساده بهتر از پیچیده است.<br />
+پیچیده بهتر از بغرنج است.<br />
+مسطح بهتر از تو در تو است.<br />
+تنک بهتر از متراکم است.<br />
+خوانایی مهم است.<br />
+موارد خاص آنقدر خاص نیستند که قانون را زیر پا گذاشت.<br />
+هرچند کاربری خلوص را مغلوب می‌کند.<br />
+خطاها هرگز نباید بی سر و صدا رد شوند.<br />
+مگر اینکه صریحا مسکوت شده باشند.<br />
+در وقت شک و تردید از حدس زدن پرهیز کن.<br />
+باید تنها و تنها یک راه آشکار برای انجام آن وجود داشته باشد.<br />
+هرچند ممکن است آن راه در ابتدا آشکار نباشد مگر آنکه هلندی باشی!<br />
+اکنون بهتر از هرگز است.<br />
+هرچند هرگز اغلب بهتر از <em>همین حالا</em> است.<br />
+اگر تشریح پیاده‌سازی‌اش سخت است، ایده‌ی بدی است.<br />
+اگر تشرح پیاده‌سازی‌اش ساده است،‌ ممکن است ایده‌ی خوبی باشد.<br />
+فضای نام‌ها ایده‌ی بی‌نظیری هستند – بیایید بیشتر بکار ببریمشان!<br /></p>
+</div>]]>
+    </content>
+    <summary>پیش از آنکه شروع به نوشتین کنیم شایسته است بیافزایم که این متن نیز به غایت مشکل‌ساز است. شاید که با عنوان می‌شد به طریقی کنار آمد ولی با متن که هدف غایی خواننده و نویسینده و محل ملاقات آن دو است چه کنیم؟‌ آیا با جفنگ گفتن بیشتر این مشکل حل خواهد شد؟ مرا که گمان این نمی‌رود. برسیم به کار نوشتن کوان‌های ذن پایتون. استاد برنامه‌نویس بدین گونه به سخن درآمد: برنامه‌ای که خوب نوشته شده بهشت خودش است و برنامه‌ای که بد نوشته شده جهنم خودش است. و به پیش! تائوی برنامه‌نویسی، نوشته‌ جفری جیمز، ترجمه آیدین...</summary>
+  </entry>
+  
+  <entry>
+    
+    <id>urn:uuid:df8977bd-9a2f-4ef7-9e9f-49459afefb71</id>
+    
+    <title>فعالسازی HTTPS به کمک Netlify</title>
+    <updated>2017-12-16T00:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/netlify.html"/>
+    <category term="امنیت"/><category term="https"/><category term="cdn"/><category term="ssl"/>
+    <content type="html">
+        <![CDATA[<div dir="rtl"><p>از امروز این وبسایت علاوه بر HTTP از طریق <a href="https://mehdix.ir">HTTPS</a> هم در دسترس است. در این مطلب شرح می‌دهم چطور اینکار را انجام دادم.</p>
+
+<p>قبل از اینکه شیرجه بزنیم داخل راهنما، یک توضیح کوچک راجع به HTTPS بدهم. هر سایت می‌تواند به صورت HTTP یا HTTPS سرو شود. وقتی اطلاعات با HTTP سرو می‌شود هر کامپیوتری بین کامپیوتر یا موبایل ما و سایت مقصد هم لینک را می‌بیند و هم محتوا را، شامل عکس، رمز، متن و مانند اینها. از اینها گذشته می‌تواند آنرا تغییر بدهد، مثل کاری که چند وقت پیش ایرانسل انجام می‌داد و در صفحاتی که با HTTP سرو می‌شدند تبلیغات نمایش می‌داد. اما اگر وبسایتی با HTTPS سرو بشود محتوا بین کامپیوتر ما و سرور مقصد رمز می‌شود و قابل فهم نیست. امکان تغییر اطلاعات هم نیست چون مرورگر خطا می‌دهد. البته مهم است که از مرورگر سالم و دست‌نخورده استفاده کنیم، چرا که مرورگر لیست گواهینامه‌هایی که می‌تواند به آنها اعتماد کند در دل خودش دارد. تنها چیزی که کامپیوترهای بین راه در این حالت می‌بینند نام دامنه است. آنها حتی رشته‌ای که بعد از نامه دامنه می‌آیند را نخواهند دید. مثلا با مراجعه به <a href="/bookmarker.html">https://mehdix.ir/bookmarker.html</a> سرورهای بین راه فقط https://mehdix.ir را می‌بینند و باقی غیرقابل فهم است. قبلا در مورد <a href="/free-https-for-all.html">گواهینامه</a> نوشته‌ام.</p>
+
+<p>وبسایت من استاتیک است یعنی سروری از خودش ندارد و از Github سرو می‌شود. گیت‌هاب برای دامین‌های شخصی فعالسازی HTTPS را پشتیبانی نمی‌کند. برای اینکه بدون استفاده از سرور مجزا بتوان HTTPS را فعال کرد تنها یک راه وجود دارد، باید از یک CDN استفاده کرد. CDN اختصار Content Delivery Network است. با بکارگیری CDN وبسایت از طریق شبکه بزرگی از سرورهایی که در قاره‌های مختلف پراکنده‌اند سرو می‌شود. معمولا برای سرو کردن عکس‌ها و فایل‌های استاتیک از این تکنیک استفاده می‌شود، هدف اصلی هم کاهش ترافیک سرور اصلی و افزایش سرعت دسترسی به وبسایت است.</p>
+
+<p>از جایی که CDN مثل یک پر‌اکسی عمل می‌کند ما می‌توانیم به کمک آن HTTPS را برای وبسایتمان فعال کنیم. معروفترین CDN‌ای که اینکار را انجام می‌دهد CloudFlare است ولی متاسفانه به دامین‌های <code class="language-plaintext highlighter-rouge">.ir</code> خدمات نمی‌دهد. شرکت دیگری که خدمات مشابه و بسیار برنامه‌نویس‌پسند! ارائه می‌دهد نامش <a href="http://netlify.com/">Netlify</a> است که یک استارت‌اپ تازه‌تاسیس در سانفرانسیسکوست. من با کمک این سرویس HTTPS را برای وبسایتم فعال کردم.</p>
+
+<p>چیزی که باعث حیرت من شد کیفیت بسیار بالا و راحتی بسیار زیاد کار با Netlify بود. از طرفی برای دامین‌های ایران هم محدودیت ندارد. (ولی شاید در آینده با گسترش شرکت به فکر محدود کردن بیفتند) به طور خلاصه خدمات زیر را در پلن رایگانشان ارائه می‌کنند:</p>
+
+<ol>
+  <li>بیلد و دیپلوی کردن ریپازیتوری از روی گیت‌هاب</li>
+  <li>مدیریت دامنه جداگانه برای هر مخزن نرم‌افزاری (می‌شود یک وبسایت به هر مخزن منسوب کرد.)</li>
+  <li>فعالسازی HTTPS از طریق صدور گواهینامه Let’s Encrypt</li>
+  <li>افزایش سرعت لود با استفاده از  CDN این شرکت</li>
+  <li>بهینه‌سازی و فشرده‌سازی فایلهای وبسایت</li>
+  <li>مدیریت فرم‌های HTML و ارسال محتوا از طریق WebHook</li>
+  <li>امکان انجام Split Testing روی ترافیک (گروهی از کاربران دیزاین دیگری می‌بینند)</li>
+  <li>امکان افزودن مدیریت کاربران به سایتهای استاتیک</li>
+</ol>
+
+<p>و البته خیلی امکانات دیگر که در وبسایتشان توضیح داده‌اند.</p>
+
+<p>مراحل فعالسازی هم بسیار ساده بود. من ابتدا یک اکانت ساختم و بعد به شکل اتوماتیک مخزن گیت‌هابی که محتوای سایتم روی آن است را انتخاب کردم. از جایی که خودشان بیلد جکیل را ساپورت می‌کردند نیازی به افزودن فایل کانفیگ مجزا هم نبود. فقط از جایی که بیلد صحیح سایت من به نسخه جدیدتری از روبی نسبت به نسخه دیفالت بیلدسرور آنها نیاز داشت یک فایل <code class="language-plaintext highlighter-rouge">.ruby-version</code> به مخزن اضافه کردم. از سوی دیگر آدرسهای سرور دامنه‌ای که اختصارا برای هر مخزن تولید می‌شود را در وبسایت ایرنیک وارد کردم تا دامنه mehdix.ir توسط Netlify هدایت بشود.</p>
+
+<p>در مجموع خیلی راضی هستم و در پروژه‌های بیشتری از Netlify استفاده خواهم کرد.</p>
+
+</div>]]>
+    </content>
+    <summary>از امروز این وبسایت علاوه بر HTTP از طریق HTTPS هم در دسترس است. در این مطلب شرح می‌دهم چطور اینکار را انجام دادم. قبل از اینکه شیرجه بزنیم داخل راهنما، یک توضیح کوچک راجع به HTTPS بدهم. هر سایت می‌تواند به صورت HTTP یا HTTPS سرو شود. وقتی اطلاعات با HTTP سرو می‌شود هر کامپیوتری بین کامپیوتر یا موبایل ما و سایت مقصد هم لینک را می‌بیند و هم محتوا را، شامل عکس، رمز، متن و مانند اینها. از اینها گذشته می‌تواند آنرا تغییر بدهد، مثل کاری که چند وقت پیش ایرانسل انجام می‌داد و در صفحاتی که با...</summary>
+  </entry>
+  
+  <entry>
+    
+    <id>urn:uuid:79de2ab4-ac94-4f4e-b40e-171de96d4d04</id>
+    
+    <title>قانون اساسی به فرم YAML</title>
+    <updated>2016-08-07T00:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/iran-constitution.html"/>
+    <category term="قانون"/><category term="متادیتا"/><category term="yaml"/><category term="ایران"/>
+    <content type="html">
+        <![CDATA[<div dir="rtl"><h1 id="بیگ-عنوان">بیگ عنوان</h1>
+
+<p>قانون اساسی مهمترین قانون هر کشوری است. ولی گیگ‌ها نیاز دارند که این قانون را با برنامه‌هایشان پردازش کنند. من هم قانون اساسی جمهوری اسلامی ایران را برای خاطر گیک‌ها به فرمت <a href="http://yaml.org/">YAML</a> تبدیل کردم.</p>
+
+<p>نهادهایی که با سرمایه ملت اداره می‌شوند وظیفه‌شان است که داده‌هایی که به مردم تعلق دارد را منتشر کنند. در دنیای امروز این داده‌ها باید برای برنامه‌ها قابل خواندن باشد. هرچند نهادهای اداره کننده کشور ما راه درازی پیش رو دارند تا اینکه روزی بتوانند این نیاز را مطابق انتظار یک گیک برآورنده کنند. به همین خاطر من دست به کار شدم و قانون اساسی را از <a href="http://rc.majlis.ir/fa/content/iran_constitution">سایت مرکز پژوهش‌های مجلس</a> پیاده کرده و آن را به فرمت YAML نشانه‌گذاری کرده و <a href="https://github.com/mehdisadeghi/iranconstitution/blob/master/constitution.yaml">روی گیت‌هاب</a> منتشر کردم. استفاده از این فایل طبق مجوز <a href="http://creativecommons.org/licenses/by/4.0/">CC 4.0</a> آزاد است.</p>
+
+<h2 id="عنوان">عنوان</h2>
+
+<p>وقتی داده‌های عمومی مانند قانون در قالب‌های استاندارد در دسترس باشند می‌توان برنامه‌هایی نوشت که به سادگی آنها را خوانده و پردازش کنند. مثلا می‌شود هر اصل قانون اساسی را پیدا کرد. بدون داشتن داده در یک فرمت استاندارد و تحت یک مجوز آزاد امکان این کار نیست. YAML هم یک زبان نشانه‌گذاری برای ذخیره و بازیابی داده‌های متنی است. زبان JSON زیر مجموعه آن محسوب می‌شود. مهمترین ویژگی YAML خوانایی بالای آن برای انسانهاست. بنابراین می‌توان با پایتون یا روبی یا نود فایل را خواند و آن را اصل به اصل جستجو کرد یا فهمید کدام اصل اصلاح شده است یا اینکه لغات کلیدی را نسبت به هر اصل و بخش مرتب کرد و یا موارد دیگری از این دست را انجام داد. از همه اینها گذشته به واسطه خوانا بودن فایل آن را می‌توان به سادگی در هر ویرایشگر متنی خواند و احیانا اصلاح کرد.</p>
+
+<h2 id="عنوان-1">عنوان</h2>
+
+<p>حین انتقال متن خام از سایت مرکز پژوهش‌های مجلس متوجه نکات جالبی شدم. اول اینکه که حدس می‌زنم داده‌اند کسی متن را از روی یک متن چاپی تایپ کرده است چرا که غلط‌های مختلف تایپی در متن وجود داشت. دیگر اینکه اصلا خبری از نیم‌فاصله نبود.  تا جایی که می‌توانستم اصلاح کردم اگر ایرادی مشاهده کردید لطفا روی گیت‌هاب تصحیح کنید و پول ریکوئست بفرستید. در ضمن طرف خیلی هم خسته بوده است. گاهی جملاتی را دوبار تایپ کرده، گاهی هم قانون جدید و قدیم را یکی نوشته که گاها مجبور شدم با <a href="http://www.shora-gc.ir/Portal/Home/ShowPage.aspx?Object=News&amp;ID=346db5f5-6205-4ec0-a619-f6d7d57be193&amp;LayoutID=df97d031-b451-4421-819a-5012d4705435&amp;CategoryID=ff0668dd-649c-4d53-a9ba-23ec1caed3be">سایت مجلس خبرگان</a> کنترل کنم. (آنجا وضع تایپ بدتر بود، مثال از یای فارسی خبری نبود!) اما سخت‌ترین قسمت کار تصمیم‌گیری برای قالب فایل بود طوری که نه سیخ بسوزد نه کباب. یعنی هم فایل خوانایی خودش را حفظ کند و هم من بتوانم کارم را راحت‌تر انجام بدهم.</p>
+
+<p>ساختار کلی فایل به شرح زیر است:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">The Constitution</span><span class="pi">:</span>
+  <span class="na">Introduction</span><span class="pi">:</span>
+  <span class="na">Principles</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">chapter</span><span class="pi">:</span>
+      <span class="na">index</span><span class="pi">:</span>
+      <span class="na">history</span><span class="pi">:</span>
+        <span class="pi">-</span>
+      <span class="na">text</span><span class="pi">:</span>
+</code></pre></div></div>
+
+<p>در فایل کلیدهای مختلفی بکار برده‌ام. اما مهمترین کلیدهای بکار رفته در فایل هم به شرح زیر هستند:</p>
+
+<ul>
+  <li>The Constitution: همه قوانین زیر این مدخل نوشته شده‌اند، یعنی قانون اساسی</li>
+  <li>Introduction: مقدمه‌ی قانون اساسی جمهوری اسلامی ایران</li>
+  <li>Principles: اصول قانون اساسی. یک لیست است.</li>
+  <li>chapter: شماره فصل. قانون اساسی در چهارده فصل تنظیم شده است.</li>
+  <li>index: شماره اصل قانون</li>
+  <li>history: نسخه‌های قبلی. در حال حاضر بعضی اصول فقط یک تاریخچه دارند که به اصلاحیه سال ۱۳۶۸ باز می‌گردد.</li>
+  <li>text: متن هر اصل از قانون</li>
+</ul>
+
+<p>برای خواندن فایل در پایتون می‌توانید از <code class="language-plaintext highlighter-rouge">pyyaml</code> استفاده کنید:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">pyyaml</span> <span class="o">--</span><span class="n">user</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">mehdisadeghi</span><span class="o">/</span><span class="n">iranconstitution</span>
+<span class="err">$</span> <span class="n">cd</span> <span class="n">iranconstitution</span>
+<span class="err">$</span> <span class="n">python</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">yaml</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'constitution.yaml'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">yaml</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Loader</span><span class="o">=</span><span class="n">yaml</span><span class="p">.</span><span class="n">CLoader</span><span class="p">)</span> <span class="c1"># CLoader is super fast
+</span><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'The Constitution'</span><span class="p">][</span><span class="s">'Principles'</span><span class="p">])</span>
+<span class="mi">177</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'The Constitution'</span><span class="p">][</span><span class="s">'Principles'</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s">'text'</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>به روال گذشته این پروژه هم <a href="projects/iranconstitution">صفحه اختصاصی خودش</a> را دارد. همچنین تشکر ویژه از ‏جادی بابت معرفی این پروژه در <a href="http://jadi.net/2016/08/mondays-mordad-95/">لینک‌های شاد آخر ماه مرداد</a>.</p>
+
+</div>]]>
+    </content>
+    <summary>بیگ عنوان قانون اساسی مهمترین قانون هر کشوری است. ولی گیگ‌ها نیاز دارند که این قانون را با برنامه‌هایشان پردازش کنند. من هم قانون اساسی جمهوری اسلامی ایران را برای خاطر گیک‌ها به فرمت YAML تبدیل کردم. نهادهایی که با سرمایه ملت اداره می‌شوند وظیفه‌شان است که داده‌هایی که به مردم تعلق دارد را منتشر کنند. در دنیای امروز این داده‌ها باید برای برنامه‌ها قابل خواندن باشد. هرچند نهادهای اداره کننده کشور ما راه درازی پیش رو دارند تا اینکه روزی بتوانند این نیاز را مطابق انتظار یک گیک برآورنده کنند. به همین خاطر من دست به کار شدم و...</summary>
+  </entry>
+  
+  <entry>
+    
+    <id>urn:uuid:0b64d07f-6c08-475b-a509-463df5458039</id>
+    
+    <title>python -m this</title>
+    <updated>2016-05-17T00:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/python-zen.html"/>
+    <category term="ذن"/><category term="zen"/>
+    <content type="html">
+        <![CDATA[<div dir="rtl"><p>کوان‌های ذن پایتون.</p>
+
+<blockquote>
+  <p>استاد برنامه‌نویس بدین گونه به سخن درآمد: برنامه‌ای که خوب نوشته شده بهشت خودش است و برنامه‌ای که بد نوشته شده جهنم خودش است.</p>
+</blockquote>
+
+<p>تائوی برنامه‌نویسی، نوشته‌ جفری جیمز، ترجمه آیدین غریب‌نواز</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
+
+<span class="n">The</span> <span class="n">Zen</span> <span class="n">of</span> <span class="n">Python</span><span class="p">,</span> <span class="n">by</span> <span class="n">Tim</span> <span class="n">Peters</span>
+
+<span class="n">Beautiful</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">ugly</span><span class="p">.</span>
+<span class="n">Explicit</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">implicit</span><span class="p">.</span>
+<span class="n">Simple</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="nb">complex</span><span class="p">.</span>
+<span class="n">Complex</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">complicated</span><span class="p">.</span>
+<span class="n">Flat</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">nested</span><span class="p">.</span>
+<span class="n">Sparse</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">dense</span><span class="p">.</span>
+<span class="n">Readability</span> <span class="n">counts</span><span class="p">.</span>
+<span class="n">Special</span> <span class="n">cases</span> <span class="n">aren</span><span class="s">'t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you'</span><span class="n">re</span> <span class="n">Dutch</span><span class="p">.</span>
+<span class="n">Now</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">never</span><span class="p">.</span>
+<span class="n">Although</span> <span class="n">never</span> <span class="ow">is</span> <span class="n">often</span> <span class="n">better</span> <span class="n">than</span> <span class="o">*</span><span class="n">right</span><span class="o">*</span> <span class="n">now</span><span class="p">.</span>
+<span class="n">If</span> <span class="n">the</span> <span class="n">implementation</span> <span class="ow">is</span> <span class="n">hard</span> <span class="n">to</span> <span class="n">explain</span><span class="p">,</span> <span class="n">it</span><span class="s">'s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let'</span><span class="n">s</span> <span class="n">do</span> <span class="n">more</span> <span class="n">of</span> <span class="n">those</span><span class="err">!</span>
+</code></pre></div></div>
+
+<p>زیبا بهتر از زشت است.<br />
+صریح بهتر از ضمنی است.<br />
+ساده بهتر از پیچیده است.<br />
+پیچیده بهتر از بغرنج است.<br />
+مسطح بهتر از تو در تو است.<br />
+تنک بهتر از متراکم است.<br />
+خوانایی مهم است.<br />
+موارد خاص آنقدر خاص نیستند که قانون را زیر پا گذاشت.<br />
+هرچند کاربری خلوص را مغلوب می‌کند.<br />
+خطاها هرگز نباید بی سر و صدا رد شوند.<br />
+مگر اینکه صریحا مسکوت شده باشند.<br />
+در وقت شک و تردید از حدس زدن پرهیز کن.<br />
+باید تنها و تنها یک راه آشکار برای انجام آن وجود داشته باشد.<br />
+هرچند ممکن است آن راه در ابتدا آشکار نباشد مگر آنکه هلندی باشی!<br />
+اکنون بهتر از هرگز است.<br />
+هرچند هرگز اغلب بهتر از <em>همین حالا</em> است.<br />
+اگر تشریح پیاده‌سازی‌اش سخت است، ایده‌ی بدی است.<br />
+اگر تشرح پیاده‌سازی‌اش ساده است،‌ ممکن است ایده‌ی خوبی باشد.<br />
+فضای نام‌ها ایده‌ی بی‌نظیری هستند – بیایید بیشتر بکار ببریمشان!<br /></p>
+</div>]]>
+    </content>
+    <summary>کوان‌های ذن پایتون. استاد برنامه‌نویس بدین گونه به سخن درآمد: برنامه‌ای که خوب نوشته شده بهشت خودش است و برنامه‌ای که بد نوشته شده جهنم خودش است. تائوی برنامه‌نویسی، نوشته‌ جفری جیمز، ترجمه آیدین غریب‌نواز &gt;&gt;&gt; import this The Zen of Python, by Tim Peters Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the...</summary>
+  </entry>
+  
+  <entry>
+    
+    <id>urn:uuid:9a4972ef-a1d5-409e-8f91-6a0616c4223a</id>
+    
+    <title>پیشگفتار</title>
+    <updated>2014-11-02T14:24:00Z</updated>
+    <link rel="alternate" type="text/html" href="http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/publishing-with-jekyll.html"/>
+    <category term="وبلاگ"/><category term="جکیل"/><category term="هکر"/>
+    <content type="html">
+        <![CDATA[<div dir="rtl"><p>مدتها قبل وبلاگ‌هایی<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> با وردپرس داشتم که متروکه شدند. آنها روی وردپرس قرار داشتند و امکان شخصی سازی در اختیارم نمی‌گذاشتند. اخیرا دوباره علاقه‌مند شدم که یک وبلاگ شخصی داشته باشم اما نه روی وردپرس بلکه روی یک دامنه شخصی. این کار از منظر مارکتینگ شخصی برای من به عنوان یک برنامه‌نویس و یک هکر تازه‌کار مهم است. بنابراین دامنه جدیدی ثبت کردم و وبلاگی مبتنی بر وردپرس راه‌اندازی کردم. از جایی که قصد دارم گاهی مطالبی به انگلیسی یا آلمانی منتشر کنم وردپرس را به کمک پلاگینی به نام <a href="https://wordpress.org/plugins/polylang/">polylang</a> به وبلاگی چندزبانه تبدیل کردم. اما به زودی دریافتم که با اینکار «سادگی» را که برایم بسیار مهم است از دست می‌دهم و تصمیم گرفتم که این روش را کنار بگذارم. در جستجوی یک روش ساده‌ و هکرپسند به جکیل رسیدم. وبلاگی که در پیش‌رو دارید با جِکیل ساخته شده است.</p>
+
+<h2 id="اهمیت-وبسایت-شخصی">اهمیت وبسایت شخصی</h2>
+<p>از دیرباز بین هکرها رسم بوده است که سایتی<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup> شخصی برای خودشان داشته باشند و آنجا خودشان را معرفی کرده و در مورد نظرات و پروژه‌هایشان بنویسند. در کتاب <a href="http://aidinhut.com/fa/books/the_tao_of_programming.pdf">تائوی برنامه‌نویسان</a> که دوست خوبم آیدین غریب‌نواز ترجمه کرده است می‌توانید بیشتر با رفتار و عقاید هکرها آشنا شوید. داشتن یک وبسایت شخصی هم محلی است برای نوشتن مطالب شخصی و هم جایی است که می‌شود پروژه‌هایی را آنجا بارگذاری کرد. گذشته از اینها وبسایت شخصی مثل محلی برای تمرین دانسته‌های من است. علاوه بر این ممکن است من بخواهم برنامه‌ای بنویسم و آنرا در سایت خودم «نصب» کنم یا با متصل شدن به هاست شخصی‌ام به کدها و برنامه‌هایم دسترسی داشته باشم. به هر ترتیب داشتن یک سایت شخصی هم مزایای فنی و آموزشی دارد و هم مانند یک رزومه آنلاین در دنیای اینترنتی امروز است.</p>
+
+<h2 id="سادگی">سادگی</h2>
+<p>بسیاری وبسایتشان را خودشان نوشته‌اند و بسیاری هم از سیستم‌های مدیریت محتوا استفاده کرده‌اند که قابلیت‌های زیادتری را به راحتی در اختیار می‌گذارند. من دوست دارم وبسایتی ساده داشته باشم ولی در عین حال نمی‌خواهم از فن‌آوری‌های مدرن چشم‌پوشی کنم. سادگی یکی از اصولی است که اواخر یاد گرفته‌ام. سادگی برای من یعنی انتخاب راه‌حلی که کاری کوچک را به شیوه‌ای درست و موثر انجام بدهد. سادگی در ارتباط مستیم با «بهره‌وری» قرار دارد. هرچه راه‌حل ساده‌تر باشد، ماندگاری و دوام آن هم بیشتر است و توسعه آن نیز راحت‌تر است.</p>
+
+<h2 id="تکنولوژی">تکنولوژی</h2>
+<p>با این اوصاف من از فیچرهایی که یک سیستم مدیریت محتوا به من می‌دهد در حال حاضر چشم‌پوشی می‌کنم و یک وبلاگ استاتیک که فقط از HTML و CSS و JavaScript تشکیل شده است ایجاد می‌کنم. منتها نوشته‌های من روی گیت‌هاب قرار خواهند داشت و من از آن برای کنترل نسخه‌های نوشته‌هایم و نیز به عنوان سکوی انتشار مطالبم استفاده می‌کنم.
+اما برای ایجاد ساختار سایت چه می‌کنم؟ من از یک پروژه آزاد بنام <a href="http://jekyllrb.com/">Jekyll</a> استفاده می‌کنم (بخوانید جِکیل). جکیل این امکان را به من می‌دهد که ساختار یک وبلاگ را روی کامپیوتر شخصی‌ام بسازم و امکاناتی دارد که تولید یک وبلاگ را ساده می‌کند. جکیل از چند نوع <a href="http://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86_%D9%86%D8%B4%D8%A7%D9%86%D9%87%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C">زبان‌ نشانه‌گذاری</a> از جمله زبان محبوبی مانند <a href="https://help.github.com/articles/markdown-basics/">Markdown</a> برای نوشتن مطالب پشتیبانی می‌کند. همچنین دارای پردازشگر قالبی (Template Processor) است که امکان ساختاردهی پویا را فراهم می‌کند. به طور کلی روش کار من خیلی ساده است، من وبلاگم رو روی کامپیوترم تغییر می‌دهم (مثلا با نگارش این پست) بعد آنرا در گیت‌هاب «پوش» می‌کنم و وبلاگ من به طور خودکار بروز می‌شود. من روش اینکار را در مقاله دیگری به تفصیل شرح داده‌ام که به زودی منتشر می‌کنم.</p>
+
+<p>به این ترتیب من با استفاده از جکیل وبلاگم را ساختم که <a href="https://github.com/mehdisadeghi/mehdix.org">ساختار پروژه</a> روی گیت‌هاب قابل مشاهده و دریافت است.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>منجمله <a href="http://azadnevis.wordpress.com/">آزادنویس</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>من از لغت «وبلاگ» برای اشاره به سایت به عنوان سکوی انتشار مطالب و از واژه‌های «وبسایت» و «سایت» برای اشاره به کل یک سایت شامل وبلاگ و سایر برنامه‌ها استفاده می‌کنم. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>]]>
+    </content>
+    <summary>مدتها قبل وبلاگ‌هایی1 با وردپرس داشتم که متروکه شدند. آنها روی وردپرس قرار داشتند و امکان شخصی سازی در اختیارم نمی‌گذاشتند. اخیرا دوباره علاقه‌مند شدم که یک وبلاگ شخصی داشته باشم اما نه روی وردپرس بلکه روی یک دامنه شخصی. این کار از منظر مارکتینگ شخصی برای من به عنوان یک برنامه‌نویس و یک هکر تازه‌کار مهم است. بنابراین دامنه جدیدی ثبت کردم و وبلاگی مبتنی بر وردپرس راه‌اندازی کردم. از جایی که قصد دارم گاهی مطالبی به انگلیسی یا آلمانی منتشر کنم وردپرس را به کمک پلاگینی به نام polylang به وبلاگی چندزبانه تبدیل کردم. اما به زودی دریافتم...</summary>
+  </entry>
+  
+
+</feed>
