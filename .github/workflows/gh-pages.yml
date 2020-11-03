@@ -18,18 +18,21 @@ jobs:
       env:
          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
+    # - name: Build
+    #   uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+    #     GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+    #     DEPLOY_SITE: false
+    #     REMOVE_GEMLOCK: true
+
     - name: Build
-      uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        DEPLOY_SITE: false
-        REMOVE_GEMLOCK: true
+      uses: jerryjvl/jekyll-build-action@v1
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_branch: gh-pages
+        #publish_branch: gh-pages
         publish_dir: ./_site
