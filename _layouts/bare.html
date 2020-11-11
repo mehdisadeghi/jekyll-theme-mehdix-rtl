@@ -2,7 +2,13 @@
 <html dir="rtl" lang="fa" prefix="og: https://ogp.me/ns#">
   
   <head>
-    {%- include_cached head.html -%}
+    {% comment %} Don't use caching here. The header values that
+    are page-specific will be invalid. It will take the results
+    from the first page render (the oldes post) and resue it in
+    all subsequent page builds. Terrible mistake. Kudos to Telegram
+    support for helping me to figure this out.
+    {% endcomment %}
+    {%- include head.html -%}
 
     {%- if page.tags -%}
       <meta name="keywords" content='{{ page.tags | join: "," }}' />
