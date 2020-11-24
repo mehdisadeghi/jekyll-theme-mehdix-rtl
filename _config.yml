@@ -41,6 +41,7 @@ collections:
 comments:
   enabled: true
   type: static
+  recaptcha: false
   static:
     avatar:
       visible: true

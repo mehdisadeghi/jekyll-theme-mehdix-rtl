@@ -20,7 +20,8 @@
   </div>
   {% endif %}
 
-  <form id="comment-form" name="comment" netlify netlify-honeypot="shirini">
+  <form id="comment-form" name="comment" netlify netlify-honeypot="shirini"
+  {% if site.comments.recaptcha %} data-netlify-recaptcha="true" {% endif %}>
     <input name="page_id" style="display:none" value="{{page.id}}">
     <input id="reply-to" name="reply-to" style="display:none">
     <label for="message">دیدگاه<sup class="required">*</sup> &nbsp;<small>می‌توانید با <a href="http://commonmark.org/help/" target="_">مارک‌داون</a> هم بنویسید.</small><br><small id="replyToVisualClue"></small>
@@ -39,6 +40,9 @@
     <label for="shirini">خالی بگذارید، باشد که بات‌ها گمراه شوند
       <input id="shirini" name="shirini">
     </label>
+    {% if site.comments.recaptcha %}
+    <div data-netlify-recaptcha="true"></div>
+    {% endif %}
     <div style="text-align:left">
       <button type="submit" class="button">ارسال</button>
     </div>
