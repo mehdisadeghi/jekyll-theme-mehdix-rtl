@@ -17,10 +17,11 @@ jobs:
     # Remove this step if you bring your own domain.
     - name: Patch Jekyll config
       run: |
-        echo "baseurl: /jekyll-theme-mehdix-rtl" >> _config.yml
+        echo "baseurl: /$REPO_NAME" >> _config.yml
         echo "url: https://$GITHUB_ACTOR.github.io" >> _config.yml
       env:
          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+         REPO_NAME: ${{ github.event.repository.name }}
 
     # Why? In order to avoid bundler version mismatch (happend to me).
     - name: Remove Gemfile.lock
