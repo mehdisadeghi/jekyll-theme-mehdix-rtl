@@ -4,54 +4,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
   <!--link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io" hreflang="fa" /-->
-  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io//netlify.xml" />
+  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io/.xml" />
 
-  <id>https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/netlify</id>
-  <title type="text" xml:lang="fa">فعالسازی HTTPS به کمک Netlify</title>
+  <id></id>
+  <title type="text" xml:lang="fa"></title>
   <updated></updated>
   <rights>Commons Attribution 4.0 International</rights>
 
-  
-  <entry>
-    <author>
-      <name>روح اله</name>
-      <uri></uri>
-    </author>
-    <id>5a4cb6ae8df9df36f12c16c5</id>
-    <title></title>
-    <updated>2018-01-03T10:55:42Z</updated>
-    <link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/github/workspace/_site/netlify.xml#" />
-    
-    <content type="html">
-        <![CDATA[<div dir="rtl">من یه دامنه و هاست دارم که به هم متصل بودن، تصورم این بود که میشه مثل CloudFlare این Netlify رو بین این دو قرار بدم، وارد Netlify شدم و دامنم رو به DNS Zone اضافه کردم، چهار تا NameServer داد که دامنم روی اونا تنظیم کردم، بعد تو Netlify اومدم توی قسمت DNS Records دو تا NameServer هاستم رو در قالب  NS وارد کردم، الان بعد یه روز دامنم به هاست متصل نمیشه. نمیدونم ایراد کارم کجاست؟</div>]]>
-    </content>
-
-    <summary>من یه دامنه و هاست دارم که به هم متصل بودن، تصورم این بود که میشه مثل CloudFlare این Netlify رو بین این دو قرار بدم، وارد Netlify شدم و دامنم رو به DNS Zone اضافه کردم، چهار تا NameServer داد که دامنم روی اونا تنظیم کردم، بعد تو Netlify اومدم توی قسمت DNS Records دو تا NameServer هاستم رو در قالب  NS وارد کردم، الان بعد یه روز دامنم به هاست متصل نمیشه. نمیدونم ایراد کارم کجاست؟</summary>
-  </entry>
-  
-  <entry>
-    <author>
-      <name>مهدی صادقی</name>
-      <uri>https://mehdix.ir</uri>
-    </author>
-    <id>5a4cf9438df9df223b2c16c9</id>
-    <title></title>
-    <updated>2018-01-03T15:39:47Z</updated>
-    <link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/github/workspace/_site/netlify.xml#" />
-    
-    <content type="html">
-        <![CDATA[<div dir="rtl">> تصورم این بود که میشه مثل CloudFlare این Netlify رو بین این دو قرار بدم
-
-نتلیفای سایت دیگه‌ای رو نمی‌تونه سرو کنه. همه چیز باید رو خودش باشه. مناسب سایتهای استاتیکه.
-
-> بعد تو Netlify اومدم توی قسمت DNS Records دو تا NameServer هاستم رو در قالب NS وارد کردم
-
-این قسمت فقط به درد تعریف رکوردهای جدید می‌خوره. مثلا تعریف زیر دامنه برای ایمیل. نمی‌تونی هاستت خودت رو اینجا وارد کنی.
-
-کلا نمی‌تونی از نتلیفای برای اضافه کردن https به سرور یا هاست شخصی خودت استفاده کنی مگر اینکه استاتیک باشه و کاملا از روی نتلیفای سرو بشه. مطلب رو اصلاح می‌کنم که باعث سردرگمی نشه.</div>]]>
-    </content>
-
-    <summary>> تصورم این بود که میشه مثل CloudFlare این Netlify رو بین این دو قرار بدم نتلیفای سایت دیگه‌ای رو نمی‌تونه سرو کنه. همه چیز باید رو خودش باشه. مناسب سایتهای استاتیکه. > بعد تو Netlify اومدم توی قسمت DNS Records دو تا NameServer هاستم رو در قالب NS وارد کردم این قسمت فقط به درد تعریف رکوردهای جدید می‌خوره. مثلا تعریف زیر دامنه برای ایمیل. نمی‌تونی هاستت خودت رو اینجا وارد کنی. کلا نمی‌تونی از نتلیفای برای اضافه کردن https به سرور یا هاست شخصی خودت استفاده کنی مگر اینکه استاتیک باشه و کاملا از روی نتلیفای سرو بشه....</summary>
-  </entry>
   
 </feed>

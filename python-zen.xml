@@ -4,10 +4,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
   <!--link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io" hreflang="fa" /-->
-  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io//python-zen.xml" />
+  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io/.xml" />
 
-  <id>https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/python-zen</id>
-  <title type="text" xml:lang="fa">python -m this</title>
+  <id></id>
+  <title type="text" xml:lang="fa"></title>
   <updated></updated>
   <rights>Commons Attribution 4.0 International</rights>
 

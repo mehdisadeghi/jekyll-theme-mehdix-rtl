@@ -4,46 +4,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa" >
 
   <!--link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io" hreflang="fa" /-->
-  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io//iran-constitution.xml" />
+  <link rel="self" type="application/atom+xml" href="https://mehdisadeghi.github.io/.xml" />
 
-  <id>https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/iran-constitution</id>
-  <title type="text" xml:lang="fa">قانون اساسی به فرم YAML</title>
+  <id></id>
+  <title type="text" xml:lang="fa"></title>
   <updated></updated>
   <rights>Commons Attribution 4.0 International</rights>
 
-  
-  <entry>
-    <author>
-      <name>na</name>
-      <uri></uri>
-    </author>
-    <id>2849414565</id>
-    <title></title>
-    <updated>2016-08-21T09:19:17Z</updated>
-    <link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/github/workspace/_site/iran-constitution.xml#" />
-    
-    <content type="html">
-        <![CDATA[<div dir="rtl"><p>ممنون بابت اشکالاتی که درباره متن قانون تو سایت مرکز بیان کردین. به زودی برطرف خواهد شد.</p></div>]]>
-    </content>
-
-    <summary>ممنون بابت اشکالاتی که درباره متن قانون تو سایت مرکز بیان کردین. به زودی برطرف خواهد شد.</summary>
-  </entry>
-  
-  <entry>
-    <author>
-      <name>Mehdi Sadeghi</name>
-      <uri>https://disqus.com/by/mehdisadeghi/</uri>
-    </author>
-    <id>2856960019</id>
-    <title></title>
-    <updated>2016-08-24T13:24:24Z</updated>
-    <link rel="alternate" type="text/html" href="https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/github/workspace/_site/iran-constitution.xml#" />
-    
-    <content type="html">
-        <![CDATA[<div dir="rtl"><p>باعث خوشحالیه. خوبه که اصلاحات رو هم از طریقی (؟) اعلام کنید که من هم بروزرسانی کنم.</p></div>]]>
-    </content>
-
-    <summary>باعث خوشحالیه. خوبه که اصلاحات رو هم از طریقی (؟) اعلام کنید که من هم بروزرسانی کنم.</summary>
-  </entry>
   
 </feed>
