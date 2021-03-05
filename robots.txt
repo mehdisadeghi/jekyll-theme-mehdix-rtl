@@ -1,1 +1,1 @@
-Sitemap: http://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/sitemap.xml
+Sitemap: https://mehdisadeghi.github.io/jekyll-theme-mehdix-rtl/sitemap.xml
