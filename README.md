@@ -1,9 +1,5 @@
 # jekyll-theme-mehdix-rtl [![Gem Version](https://badge.fury.io/rb/jekyll-theme-mehdix-rtl.svg)](https://badge.fury.io/rb/jekyll-theme-mehdix-rtl) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mehdisadeghi/jekyll-theme-mehdix-rtl)
 
-<p align="center">
-<img src="screenshot.png">
-</p>
-
 See English version below.
 
 <div dir="rtl" lang="fa">
@@ -19,23 +15,7 @@ See English version below.
 <img src="assets/pimg/ghpages1.png">
 </p>
 
-بدون هیچ تغییر دیگری همینکه تغییرات خودتان را پوش کنید سایت بیلد می‌شود اما در _gp-pages_ کپی نمی‌شود. علت هم نقص در گیت‌هاب است چون امکان بیلد را ماکروسافت اخیرا بعد از خریداری گیت‌هاب اضافه کرده است و هنوز در حال تکمیل است. راه حلی که پیدا کردم استفاده از یک کلید جداگانه برای بیلد است. برای اینکار باید یک کلید روی کامپیوترتان بسازید و به تنظیمات ریپازیتوری گیت‌هابتان اضافه کنید. اول کلید را بسازید:
-
-<div dir="ltr">
-    $ ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
-</div>
-
-خروجی این دستور دو فایل `gh-pages` و `gh-pages.pub` است که اولی کلید خصوصی و دومی کلید عمومی است. بروید به _Settings/Deploy Keys_ و یک کلید جدید بنام `ACTIONS_DEPLOY_KEY` بسازید و محتوای فایل کلید عمومی را آنجا کپی کنید. اسم همین باشد چون در تنظیمات بیلد بکار رفته است. چک‌باکس _Allow write access_ را هم تیک بزنید.
-
-<p align="center">
-<img src="assets/pimg/ghpages2.png">
-</p>
-
-همینکار را هم برای کلید خصوصی در بخش _Secrets_ انجام بدهید و تمام.
-
-<p align="center">
-<img src="assets/pimg/ghpages3.png">
-</p>
+بدون هیچ تغییر دیگری همینکه تغییرات خودتان را پوش کنید سایت بیلد می‌شود.
 
 حسن این روش اینست که ساده و سرراست است. لازم نیست با پیچیدگی‌های جکیل و تنظیمات قالب را بدانید. عیبش هم اینست که تغییرات جدید در تم را دریافت نمی‌کند که به نظرم اهمیت چندانی ندارد.
 
