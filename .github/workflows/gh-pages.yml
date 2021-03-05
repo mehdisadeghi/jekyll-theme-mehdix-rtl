@@ -7,35 +7,30 @@ on:
 
 jobs:
   build-deploy:
+    name: Deploy website
     runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@v2
 
-    - name: Patch Jekyll Config
+    steps:
+    - name: Checkout website code
+      uses: actions/checkout@v2
+
+    # Remove this step if you bring your own domain.
+    - name: Patch Jekyll config
       run: |
         echo "baseurl: /jekyll-theme-mehdix-rtl" >> _config.yml
-        echo "url: http://$GITHUB_ACTOR.github.io" >> _config.yml
+        echo "url: https://$GITHUB_ACTOR.github.io" >> _config.yml
       env:
          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
+    # Why? In order to avoid bundler version mismatch (happend to me).
     - name: Remove Gemfile.lock
       run: rm -rf Gemfile.lock
 
-    # - name: Build
-    #   uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-    #     GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-    #     DEPLOY_SITE: false
-    #     REMOVE_GEMLOCK: true
-
-    - name: Build
+    - name: Build website
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.7.3
+    - name: Deploy website
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        #publish_branch: gh-pages
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site

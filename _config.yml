@@ -101,3 +101,8 @@ defaults:
     type: "posts"
   values:
     layout: "post"
+-
+  scope:
+    path: "tag/*"
+  values:
+    sitemap: false
