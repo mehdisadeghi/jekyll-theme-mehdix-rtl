@@ -1,3 +1,9 @@
+# Maintenance Note
+Unmaintained repository. Don't use.
+
+# توجه
+من این پلاگین را استفاده نمی‌کنم توصیه هم نمی‌کنم، هرچند خودم همچنان از جکیل استفاده می‌کنم. می‌توانید [سورس](https://github.com/mehdisadeghi/mehdix.ir) سایت مهدیکس را ببینید. آن را بروز می‌کنم. همه چیز در خود ریپازیتوری پیاده‌سازی شده و فقط کافیست کپی و بیلد کنید.
+
 # jekyll-theme-mehdix-rtl [![Gem Version](https://badge.fury.io/rb/jekyll-theme-mehdix-rtl.svg)](https://badge.fury.io/rb/jekyll-theme-mehdix-rtl) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mehdisadeghi/jekyll-theme-mehdix-rtl)
 
 See English version below.
